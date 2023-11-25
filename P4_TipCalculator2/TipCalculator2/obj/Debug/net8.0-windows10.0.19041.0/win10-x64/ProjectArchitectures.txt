@@ -1,0 +1,1 @@
+C:\Users\pmora\Documents\FP\SEGUNDO\5_DesarrolloInterfaces\MiProyectoFINAL\TipCalculator2\TipCalculator2\TipCalculator2.csproj;x64
