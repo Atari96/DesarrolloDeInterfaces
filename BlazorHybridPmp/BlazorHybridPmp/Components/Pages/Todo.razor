@@ -1,0 +1,62 @@
+﻿@page "/todo"
+@using BlazorHybridPmp.Data
+@using Microsoft.Maui.Storage
+@using System.IO
+@using System.Text.Json
+
+<div class="home">
+<h3>Tareas (@todos.Count(todo => !todo.IsDone))</h3>
+
+    <div class="button-container">
+        <button @onclick="Save">Guardar</button>
+        <button @onclick="Load">Cargar</button>
+    </div>
+
+<ul class="list-unstyled">
+    @foreach (var todo in todos)
+    {
+        <li>
+            <input type="checkbox" @bind="todo.IsDone" />
+            <input @bind="todo.Title" />
+        </li>
+    }
+</ul>
+
+<input placeholder="Inserta la tarea" @bind="newTodo" />
+    <div class="button-container">
+        <button @onclick="AddTodo">Añade la tarea</button>
+    </div>
+
+@code {
+    private List<TodoItem> todos = new();
+    private string? newTodo;
+
+    private void AddTodo()
+    {
+        if (!string.IsNullOrWhiteSpace(newTodo))
+        {
+            todos.Add(new TodoItem { Title = newTodo });
+            newTodo = string.Empty;
+        }
+    }
+
+    private async Task Save()
+    {
+        var contents = JsonSerializer.Serialize(todos);
+        var path = Path.Combine(FileSystem.AppDataDirectory, "todo.json");
+        File.WriteAllText(path, contents);
+        await App.Current.MainPage.DisplayAlert("Lista guardada", $"Ha sido guardada en {path}", "OK");
+    }
+
+    private void Load()
+    {
+        var path = Path.Combine(FileSystem.AppDataDirectory, "todo.json");
+        if (!File.Exists(path))
+            return;
+        var contents = File.ReadAllText(path);
+        var savedItems = JsonSerializer.Deserialize<List<TodoItem>>(contents);
+        todos.Clear();
+        todos.AddRange(savedItems);
+    }
+}
+</div>
