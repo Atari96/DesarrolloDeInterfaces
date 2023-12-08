@@ -1,0 +1,22 @@
+﻿<Window x:Class="LoginDeMiWeb.Registro"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LoginDeMiWeb"
+        mc:Ignorable="d"
+        Title="Registro" Height="300" Width="400">
+    <Grid OpacityMask="Black">
+        <Label Content="Usuario" HorizontalAlignment="Left" Margin="58,70,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textRegistroUsuario" HorizontalAlignment="Left" Margin="58,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Password" HorizontalAlignment="Left" Margin="58,114,0,0" VerticalAlignment="Top"/>
+        <PasswordBox x:Name="textRegistroPassword" HorizontalAlignment="Left" Margin="58,140,0,0"  VerticalAlignment="Top" Width="120"/>
+        <Label Content="Email" HorizontalAlignment="Left" Margin="58,158,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textRegistroEmail" HorizontalAlignment="Left" Margin="58,184,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <CheckBox x:Name="checkRegistroAcepto" Content="Acepto" HorizontalAlignment="Left" Margin="59,213,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="textRegistroPoliticas" Content="Términos y políticas de privacidad" HorizontalAlignment="Left" Margin="130,208,0,0" VerticalAlignment="Top" Foreground="#FF0A18F7"/>
+        <Label Content="FORMULARIO DE REGISTRO" HorizontalAlignment="Left" Margin="55,28,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
+        <Button x:Name="btnCrearUsuario" Content="Crear usuario" HorizontalAlignment="Left" Margin="213,184,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

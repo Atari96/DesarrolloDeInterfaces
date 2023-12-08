@@ -1,0 +1,17 @@
+﻿<Window x:Class="LoginDeMiWeb.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LoginDeMiWeb"
+        mc:Ignorable="d"
+        Title="Recuperar contraseña" Height="250" Width="375">
+    <Grid>
+        <Label Content="Introduce un email" HorizontalAlignment="Left" Margin="63,83,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textRecuperarEmail" HorizontalAlignment="Left" Margin="67,116,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146"/>
+        <Button x:Name="btnRecuperarEnviar" Content="Enviar" HorizontalAlignment="Left" Margin="226,116,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.097,0.196"/>
+        <Label Content="RECUPERAR CONTRASEÑA" HorizontalAlignment="Center" Margin="0,41,0,0" VerticalAlignment="Top" Background="#00000000" FontWeight="Bold" FontSize="20"/>
+        <Button x:Name="btnInicio" Content="Volver" HorizontalAlignment="Center" Margin="0,153,0,0" VerticalAlignment="Top" Click="btnInicio_Click"/>
+
+    </Grid>
+</Window>
