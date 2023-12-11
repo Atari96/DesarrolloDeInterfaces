@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "CnhzpiNwq7ks1FLOqho4i5Rbd/uzrHnvZm6mHlTm0FYE/l79JXul6RVGddC0+SmuA7F8zwGPEdxuAvGKUHoWWQ==",
+  "dgSpecHash": "yORpe6P/Nuvl2pQe6vLPg26mIlSjWNtHjkr7jEYBF0iuSy+bxNdi+hIqKl9BCg323sM5NJ3SUVJ4TsqR2a/uxA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\AppVisualStudio\\LoginDeMiWeb\\LoginDeMiWeb\\LoginDeMiWeb.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\MiLogIn\\LoginDeMiWeb\\LoginDeMiWeb.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\pmora\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

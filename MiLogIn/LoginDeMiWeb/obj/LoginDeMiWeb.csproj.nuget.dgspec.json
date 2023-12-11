@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\AppVisualStudio\\LoginDeMiWeb\\LoginDeMiWeb\\LoginDeMiWeb.csproj": {}
+    "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\MiLogIn\\LoginDeMiWeb\\LoginDeMiWeb.csproj": {}
   },
   "projects": {
-    "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\AppVisualStudio\\LoginDeMiWeb\\LoginDeMiWeb\\LoginDeMiWeb.csproj": {
+    "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\MiLogIn\\LoginDeMiWeb\\LoginDeMiWeb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\AppVisualStudio\\LoginDeMiWeb\\LoginDeMiWeb\\LoginDeMiWeb.csproj",
+        "projectUniqueName": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\MiLogIn\\LoginDeMiWeb\\LoginDeMiWeb.csproj",
         "projectName": "LoginDeMiWeb",
-        "projectPath": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\AppVisualStudio\\LoginDeMiWeb\\LoginDeMiWeb\\LoginDeMiWeb.csproj",
+        "projectPath": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\MiLogIn\\LoginDeMiWeb\\LoginDeMiWeb.csproj",
         "packagesPath": "C:\\Users\\pmora\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\AppVisualStudio\\LoginDeMiWeb\\LoginDeMiWeb\\obj\\",
+        "outputPath": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\MiLogIn\\LoginDeMiWeb\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -44,6 +44,12 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

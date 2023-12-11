@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = LoginDeMiWeb
-build_property.ProjectDir = C:\Users\pmora\Documents\FP\SEGUNDO\5_DesarrolloInterfaces\AppVisualStudio\LoginDeMiWeb\LoginDeMiWeb\
+build_property.ProjectDir = C:\Users\pmora\Documents\FP\SEGUNDO\5_DesarrolloInterfaces\PRACTICAS\MiLogIn\LoginDeMiWeb\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
