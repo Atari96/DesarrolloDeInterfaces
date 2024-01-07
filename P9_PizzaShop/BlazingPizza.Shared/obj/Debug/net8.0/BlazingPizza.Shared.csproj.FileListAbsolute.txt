@@ -1,0 +1,16 @@
+C:\PizzaShop\BlazingPizza.Shared\bin\Debug\net8.0\BlazingPizza.ComponentsLibrary.staticwebassets.runtime.json
+C:\PizzaShop\BlazingPizza.Shared\bin\Debug\net8.0\BlazingPizza.Shared.deps.json
+C:\PizzaShop\BlazingPizza.Shared\bin\Debug\net8.0\BlazingPizza.Shared.dll
+C:\PizzaShop\BlazingPizza.Shared\bin\Debug\net8.0\BlazingPizza.Shared.pdb
+C:\PizzaShop\BlazingPizza.Shared\bin\Debug\net8.0\BlazingPizza.ComponentsLibrary.dll
+C:\PizzaShop\BlazingPizza.Shared\bin\Debug\net8.0\BlazingPizza.ComponentsLibrary.pdb
+C:\PizzaShop\BlazingPizza.Shared\obj\Debug\net8.0\BlazingPizza.Shared.csproj.AssemblyReference.cache
+C:\PizzaShop\BlazingPizza.Shared\obj\Debug\net8.0\BlazingPizza.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\PizzaShop\BlazingPizza.Shared\obj\Debug\net8.0\BlazingPizza.Shared.AssemblyInfoInputs.cache
+C:\PizzaShop\BlazingPizza.Shared\obj\Debug\net8.0\BlazingPizza.Shared.AssemblyInfo.cs
+C:\PizzaShop\BlazingPizza.Shared\obj\Debug\net8.0\BlazingPizza.Shared.csproj.CoreCompileInputs.cache
+C:\PizzaShop\BlazingPizza.Shared\obj\Debug\net8.0\BlazingPizza.Shared.csproj.CopyComplete
+C:\PizzaShop\BlazingPizza.Shared\obj\Debug\net8.0\BlazingPizza.Shared.dll
+C:\PizzaShop\BlazingPizza.Shared\obj\Debug\net8.0\refint\BlazingPizza.Shared.dll
+C:\PizzaShop\BlazingPizza.Shared\obj\Debug\net8.0\BlazingPizza.Shared.pdb
+C:\PizzaShop\BlazingPizza.Shared\obj\Debug\net8.0\ref\BlazingPizza.Shared.dll
