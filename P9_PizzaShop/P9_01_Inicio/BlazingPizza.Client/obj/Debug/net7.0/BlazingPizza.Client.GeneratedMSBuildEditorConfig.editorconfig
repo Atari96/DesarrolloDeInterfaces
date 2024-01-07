@@ -1,0 +1,41 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = BlazingPizza.Client
+build_property.RootNamespace = BlazingPizza.Client
+build_property.ProjectDir = C:\Users\pmora\Documents\FP\SEGUNDO\5_DesarrolloInterfaces\PRACTICAS\P9_PizzaShop\P9_01_Inicio\BlazingPizza.Client\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\pmora\Documents\FP\SEGUNDO\5_DesarrolloInterfaces\PRACTICAS\P9_PizzaShop\P9_01_Inicio\BlazingPizza.Client
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/pmora/Documents/FP/SEGUNDO/5_DesarrolloInterfaces/PRACTICAS/P9_PizzaShop/P9_01_Inicio/BlazingPizza.Client/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pmora/Documents/FP/SEGUNDO/5_DesarrolloInterfaces/PRACTICAS/P9_PizzaShop/P9_01_Inicio/BlazingPizza.Client/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pmora/Documents/FP/SEGUNDO/5_DesarrolloInterfaces/PRACTICAS/P9_PizzaShop/P9_01_Inicio/BlazingPizza.Client/Shared/ConfiguredPizzaItem.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbmZpZ3VyZWRQaXp6YUl0ZW0ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pmora/Documents/FP/SEGUNDO/5_DesarrolloInterfaces/PRACTICAS/P9_PizzaShop/P9_01_Inicio/BlazingPizza.Client/Shared/ConfigurePizzaDialog.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbmZpZ3VyZVBpenphRGlhbG9nLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pmora/Documents/FP/SEGUNDO/5_DesarrolloInterfaces/PRACTICAS/P9_PizzaShop/P9_01_Inicio/BlazingPizza.Client/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pmora/Documents/FP/SEGUNDO/5_DesarrolloInterfaces/PRACTICAS/P9_PizzaShop/P9_01_Inicio/BlazingPizza.Client/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
