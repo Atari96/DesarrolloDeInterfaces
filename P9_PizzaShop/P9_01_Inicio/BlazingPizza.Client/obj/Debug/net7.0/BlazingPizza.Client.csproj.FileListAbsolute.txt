@@ -852,6 +852,12 @@ C:\Users\pmora\Documents\FP\SEGUNDO\5_DesarrolloInterfaces\PRACTICAS\P9_PizzaSho
 C:\Users\pmora\Documents\FP\SEGUNDO\5_DesarrolloInterfaces\PRACTICAS\P9_PizzaShop\P9_Inicio\BlazingPizza.Client\obj\Debug\net7.0\refint\BlazingPizza.Client.dll
 C:\Users\pmora\Documents\FP\SEGUNDO\5_DesarrolloInterfaces\PRACTICAS\P9_PizzaShop\P9_Inicio\BlazingPizza.Client\obj\Debug\net7.0\BlazingPizza.Client.pdb
 C:\Users\pmora\Documents\FP\SEGUNDO\5_DesarrolloInterfaces\PRACTICAS\P9_PizzaShop\P9_Inicio\BlazingPizza.Client\obj\Debug\net7.0\ref\BlazingPizza.Client.dll
+C:\Users\pmora\Documents\FP\SEGUNDO\5_DesarrolloInterfaces\PRACTICAS\P9_PizzaShop\P9_01_Inicio\BlazingPizza.Client\obj\Debug\net7.0\BlazingPizza.Client.csproj.AssemblyReference.cache
+C:\Users\pmora\Documents\FP\SEGUNDO\5_DesarrolloInterfaces\PRACTICAS\P9_PizzaShop\P9_01_Inicio\BlazingPizza.Client\obj\Debug\net7.0\BlazingPizza.Client.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pmora\Documents\FP\SEGUNDO\5_DesarrolloInterfaces\PRACTICAS\P9_PizzaShop\P9_01_Inicio\BlazingPizza.Client\obj\Debug\net7.0\BlazingPizza.Client.AssemblyInfoInputs.cache
+C:\Users\pmora\Documents\FP\SEGUNDO\5_DesarrolloInterfaces\PRACTICAS\P9_PizzaShop\P9_01_Inicio\BlazingPizza.Client\obj\Debug\net7.0\BlazingPizza.Client.AssemblyInfo.cs
+C:\Users\pmora\Documents\FP\SEGUNDO\5_DesarrolloInterfaces\PRACTICAS\P9_PizzaShop\P9_01_Inicio\BlazingPizza.Client\obj\Debug\net7.0\BlazingPizza.Client.csproj.CoreCompileInputs.cache
+C:\Users\pmora\Documents\FP\SEGUNDO\5_DesarrolloInterfaces\PRACTICAS\P9_PizzaShop\P9_01_Inicio\BlazingPizza.Client\obj\Debug\net7.0\BlazingPizza.Client.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\pmora\Documents\FP\SEGUNDO\5_DesarrolloInterfaces\PRACTICAS\P9_PizzaShop\P9_01_Inicio\BlazingPizza.Client\bin\Debug\net7.0\wwwroot\_framework\BlazingPizza.Client.dll
 C:\Users\pmora\Documents\FP\SEGUNDO\5_DesarrolloInterfaces\PRACTICAS\P9_PizzaShop\P9_01_Inicio\BlazingPizza.Client\bin\Debug\net7.0\wwwroot\_framework\BlazingPizza.Client.pdb
 C:\Users\pmora\Documents\FP\SEGUNDO\5_DesarrolloInterfaces\PRACTICAS\P9_PizzaShop\P9_01_Inicio\BlazingPizza.Client\bin\Debug\net7.0\wwwroot\_framework\BlazingPizza.ComponentsLibrary.dll
@@ -1478,12 +1484,6 @@ C:\Users\pmora\Documents\FP\SEGUNDO\5_DesarrolloInterfaces\PRACTICAS\P9_PizzaSho
 C:\Users\pmora\Documents\FP\SEGUNDO\5_DesarrolloInterfaces\PRACTICAS\P9_PizzaShop\P9_01_Inicio\BlazingPizza.Client\bin\Debug\net7.0\BlazingPizza.Shared.dll
 C:\Users\pmora\Documents\FP\SEGUNDO\5_DesarrolloInterfaces\PRACTICAS\P9_PizzaShop\P9_01_Inicio\BlazingPizza.Client\bin\Debug\net7.0\BlazingPizza.ComponentsLibrary.pdb
 C:\Users\pmora\Documents\FP\SEGUNDO\5_DesarrolloInterfaces\PRACTICAS\P9_PizzaShop\P9_01_Inicio\BlazingPizza.Client\bin\Debug\net7.0\BlazingPizza.Shared.pdb
-C:\Users\pmora\Documents\FP\SEGUNDO\5_DesarrolloInterfaces\PRACTICAS\P9_PizzaShop\P9_01_Inicio\BlazingPizza.Client\obj\Debug\net7.0\BlazingPizza.Client.csproj.AssemblyReference.cache
-C:\Users\pmora\Documents\FP\SEGUNDO\5_DesarrolloInterfaces\PRACTICAS\P9_PizzaShop\P9_01_Inicio\BlazingPizza.Client\obj\Debug\net7.0\BlazingPizza.Client.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\pmora\Documents\FP\SEGUNDO\5_DesarrolloInterfaces\PRACTICAS\P9_PizzaShop\P9_01_Inicio\BlazingPizza.Client\obj\Debug\net7.0\BlazingPizza.Client.AssemblyInfoInputs.cache
-C:\Users\pmora\Documents\FP\SEGUNDO\5_DesarrolloInterfaces\PRACTICAS\P9_PizzaShop\P9_01_Inicio\BlazingPizza.Client\obj\Debug\net7.0\BlazingPizza.Client.AssemblyInfo.cs
-C:\Users\pmora\Documents\FP\SEGUNDO\5_DesarrolloInterfaces\PRACTICAS\P9_PizzaShop\P9_01_Inicio\BlazingPizza.Client\obj\Debug\net7.0\BlazingPizza.Client.csproj.CoreCompileInputs.cache
-C:\Users\pmora\Documents\FP\SEGUNDO\5_DesarrolloInterfaces\PRACTICAS\P9_PizzaShop\P9_01_Inicio\BlazingPizza.Client\obj\Debug\net7.0\BlazingPizza.Client.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\pmora\Documents\FP\SEGUNDO\5_DesarrolloInterfaces\PRACTICAS\P9_PizzaShop\P9_01_Inicio\BlazingPizza.Client\obj\Debug\net7.0\build-gz\GskNDxwK.gz
 C:\Users\pmora\Documents\FP\SEGUNDO\5_DesarrolloInterfaces\PRACTICAS\P9_PizzaShop\P9_01_Inicio\BlazingPizza.Client\obj\Debug\net7.0\build-gz\PGRStrqY.gz
 C:\Users\pmora\Documents\FP\SEGUNDO\5_DesarrolloInterfaces\PRACTICAS\P9_PizzaShop\P9_01_Inicio\BlazingPizza.Client\obj\Debug\net7.0\build-gz\N0qTAFc3.gz

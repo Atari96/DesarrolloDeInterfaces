@@ -202,16 +202,16 @@
       "netstandard.dll": "sha256-TztlSRjADgiEABbiAMdWZpHrUVd8wnRtQRAvlwmRP\/4=",
       "System.Private.CoreLib.dll": "sha256-BAhrZ8Zg3cJKQipxdzqQo+9jtPkOkRx1ou3oIhDohtk=",
       "BlazingPizza.ComponentsLibrary.dll": "sha256-yGkIx0Ujukn\/Gkj8dow6oE+e7ios2zBip3TK7mqwbFs=",
-      "BlazingPizza.Shared.dll": "sha256-hV67a5gyFTLuIS5FucMMWWrswl53k9Scdfwj6o9dPXo=",
-      "BlazingPizza.Client.dll": "sha256-tMwYn1GsesrVnxjhKjeEKKZRdW6NyneYjO5fbZLcXVI="
+      "BlazingPizza.Shared.dll": "sha256-FHKX5hcmnOuCtflEzOPAEs3kN2+4J35oan0qv\/Kc8b0=",
+      "BlazingPizza.Client.dll": "sha256-QqBkm+tQbq2UU9JhhmOTJMdsujsQ\/F1HCv3VFhdVEPc="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
       "BlazingPizza.ComponentsLibrary.pdb": "sha256-1lFwRVeAjE5ZBgNrks7vDDle5UQ6ws3nz+hPgpXm6\/8=",
-      "BlazingPizza.Shared.pdb": "sha256-7+WkQdXQzzYJdWGg40\/nmzAmkVStO3U5UWZsKNqoVQc=",
-      "BlazingPizza.Client.pdb": "sha256-fOg0VQVD7\/eYzX91HqMmBkoc5H+dvTRnIN5I+yUvgdQ="
+      "BlazingPizza.Shared.pdb": "sha256-eDnST+0LQxWsheISKPEGYIxkJlzPtl+F\/\/rhDsoeJ3U=",
+      "BlazingPizza.Client.pdb": "sha256-6Z303tTLb2+ZtPFNbem6ZZSAv2YrHUbjoPlGNXTXrgY="
     },
     "runtime": {
       "dotnet.7.0.14.ww147k54be.js": "sha256-YWGUknGRzP\/fgO6YjvCJKPVQNZAPEd6ll+rHfQEIW+I=",
