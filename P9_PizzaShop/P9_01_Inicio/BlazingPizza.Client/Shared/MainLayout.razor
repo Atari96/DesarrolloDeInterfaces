@@ -9,10 +9,16 @@
         <img src="img/pizza-slice.svg" />
         <div>Elije tu Pizza</div>
     </NavLink>
-    <NavLink href="myorders" class="nav-tab">
-        <img src="img/bike.svg" />
-        <div>Mis Pedidos</div>
-    </NavLink>
+    <!-- Rodeamos la pestaña de Mis Pedidos con el Authorize para que solo sea visto por usuarios autenticados-->
+    <AuthorizeView>
+        <NavLink href="myorders" class="nav-tab">
+            <img src="img/bike.svg" />
+            <div>Mis Pedidos</div>
+        </NavLink>
+    </AuthorizeView>
+
+    <!-- Para mostrar el logueo incorporamos el loginDisplay-->
+    <LoginDisplay />
 </div>
 
 <div class="content">

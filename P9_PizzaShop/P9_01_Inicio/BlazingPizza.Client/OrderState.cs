@@ -48,5 +48,11 @@
         {
             Order.Pizzas.Remove(pizza);
         }
+
+        // Metodo que se realiza para recuperar un pedido que habiamos hecho antes de loguearnos, y que persista despues
+        public void ReplaceOrder(Order order)
+        {
+            Order = order;
+        }
     }
 }

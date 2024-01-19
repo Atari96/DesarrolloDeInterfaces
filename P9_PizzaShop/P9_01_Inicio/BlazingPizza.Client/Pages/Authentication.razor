@@ -1,0 +1,34 @@
+﻿@page "/authentication/{action}"
+@inject OrderState OrderState
+@inject NavigationManager NavigationManager
+
+<!-- Este componente esta encaminado a la persistencia de pedidos cuando nos autenticamos como un usuario-->
+
+<RemoteAuthenticatorViewCore TAuthenticationState="PizzaAuthenticationState"
+                             AuthenticationState="RemoteAuthenticationState"
+                             OnLogInSucceeded="RestorePizza"
+                             Action="@Action" />
+
+@code {
+    [Parameter] public string Action { get; set; } = string.Empty;
+
+    public PizzaAuthenticationState RemoteAuthenticationState { get; set; } = new PizzaAuthenticationState();
+
+    protected override void OnInitialized()
+    {
+        if (RemoteAuthenticationActions.IsAction(RemoteAuthenticationActions.LogIn, Action))
+        {
+            // Llamada para persistir el pedido actual cuando nos autenticamos
+            RemoteAuthenticationState.Order = OrderState.Order;
+        }
+    }
+
+    // Metodo que se ejecuta cuando se autentica un usuario, cargando el metodo replace order
+    private void RestorePizza(PizzaAuthenticationState pizzaState)
+    {
+        if (pizzaState.Order is not null)
+        {
+            OrderState.ReplaceOrder(pizzaState.Order);
+        }
+    }
+}

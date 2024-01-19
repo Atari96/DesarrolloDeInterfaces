@@ -1,6 +1,8 @@
 ﻿@page "/checkout" 
+@attribute [Authorize]
 @inject OrderState OrderState
 @inject HttpClient HttpClient
+@inject OrdersClient OrdersClient
 @inject NavigationManager NavigationManager
 
 <PageTitle>Blazing Pizza - Checkout</PageTitle>
@@ -19,7 +21,7 @@
             </div>
         </div>
 
-        <button class="checkout-button btn btn-warning" @onclick="PlaceOrder">
+        <button class="checkout-button btn btn-warning" >
             Realizar pedido
         </button>
 
@@ -32,11 +34,19 @@
     bool isSubmitting;
     
     async Task PlaceOrder() // Despues de mover a OrderState debemos redireccionar los Order
+                            
     {
         isSubmitting = true;
-        var response = await HttpClient.PostAsJsonAsync("orders", OrderState.Order);
-        var newOrderId = await response.Content.ReadFromJsonAsync<int>();
-        OrderState.ResetOrder();
-        NavigationManager.NavigateTo($"myorders/{newOrderId}");
+        // modificacion para manejar la excepcion en el caso de que el token de autorizacion no sea válido y que nos lleve a la pantalla de error.
+        try
+        {
+            var newOrderId = await OrdersClient.PlaceOrder(OrderState.Order);
+            OrderState.ResetOrder();
+            NavigationManager.NavigateTo($"myorders/{newOrderId}");
+        }
+        catch (AccessTokenNotAvailableException ex)
+        {
+            ex.Redirect();
+        }
     }
 }

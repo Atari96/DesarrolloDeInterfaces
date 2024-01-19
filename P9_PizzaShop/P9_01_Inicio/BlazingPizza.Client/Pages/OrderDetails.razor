@@ -1,4 +1,6 @@
 ﻿@page "/myorders/{orderId:int}"
+@attribute [Authorize]
+@inject OrdersClient OrdersClient
 @implements IDisposable
 
 @using System.Threading
@@ -50,15 +52,17 @@
         PollForUpdates();
     }
 
+    // Mtodo para obtener actualizaciones del estado de un pedido
     private async void PollForUpdates()
     {
+        invalidOrder = false;
         pollingCancellationToken = new CancellationTokenSource();
         while (!pollingCancellationToken.IsCancellationRequested)
         {
+            // Incluimos el manejo de la excepcion que puede ser producida por un token no valido
             try
             {
-                invalidOrder = false;
-                orderWithStatus = await HttpClient.GetFromJsonAsync<OrderWithStatus>($"orders/{OrderId}") ?? throw new NullReferenceException();
+                orderWithStatus = await OrdersClient.GetOrder(OrderId);
                 StateHasChanged();
 
                 if (orderWithStatus.IsDelivered)
@@ -70,6 +74,11 @@
                     await Task.Delay(4000);
                 }
             }
+            catch (AccessTokenNotAvailableException ex)
+            {
+                pollingCancellationToken.Cancel();
+                ex.Redirect();
+            }
             catch (Exception ex)
             {
                 invalidOrder = true;
@@ -78,7 +87,6 @@
                 StateHasChanged();
             }
         }
-        
     }
     void IDisposable.Dispose()
     {

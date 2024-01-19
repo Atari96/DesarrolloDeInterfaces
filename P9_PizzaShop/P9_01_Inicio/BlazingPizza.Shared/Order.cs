@@ -23,7 +23,10 @@ public class Order
     public string GetFormattedTotalPrice() => GetTotalPrice().ToString("0.00");
 }
 
+// Codigo que nos permite serializar y deserializar datos Json de la clase OrderContext, definiendo el metodo que genera los nombres y el tipo (camelcase) 
 [JsonSourceGenerationOptions(GenerationMode = JsonSourceGenerationMode.Default, PropertyNamingPolicy = JsonKnownNamingPolicy.CamelCase)]
+
+// Atributos que seran serilizados/deserializados
 [JsonSerializable(typeof(Order))]
 [JsonSerializable(typeof(OrderWithStatus))]
 [JsonSerializable(typeof(List<OrderWithStatus>))]
@@ -32,4 +35,6 @@ public class Order
 [JsonSerializable(typeof(List<Topping>))]
 [JsonSerializable(typeof(Topping))]
 [JsonSerializable(typeof(Dictionary<string, string>))]
+
+// Clase parcial que hereda de JsonSerializerContext
 public partial class OrderContext : JsonSerializerContext { }
