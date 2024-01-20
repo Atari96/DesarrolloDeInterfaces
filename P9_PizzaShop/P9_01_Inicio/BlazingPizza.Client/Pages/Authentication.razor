@@ -1,13 +1,13 @@
 ﻿@page "/authentication/{action}"
 @inject OrderState OrderState
-@inject NavigationManager NavigationManager
 
 <!-- Este componente esta encaminado a la persistencia de pedidos cuando nos autenticamos como un usuario-->
 
-<RemoteAuthenticatorViewCore TAuthenticationState="PizzaAuthenticationState"
-                             AuthenticationState="RemoteAuthenticationState"
-                             OnLogInSucceeded="RestorePizza"
-                             Action="@Action" />
+<RemoteAuthenticatorViewCore 
+    TAuthenticationState="PizzaAuthenticationState"
+    AuthenticationState="RemoteAuthenticationState"
+    OnLogInSucceeded="RestorePizza"
+    Action="@Action" />
 
 @code {
     [Parameter] public string Action { get; set; } = string.Empty;

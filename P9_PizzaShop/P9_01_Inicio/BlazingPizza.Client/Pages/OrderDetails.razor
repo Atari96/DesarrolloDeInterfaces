@@ -1,10 +1,10 @@
 ﻿@page "/myorders/{orderId:int}"
 @attribute [Authorize]
+@using System.Threading
 @inject OrdersClient OrdersClient
 @implements IDisposable
 
-@using System.Threading
-@inject HttpClient HttpClient
+<PageTitle>Blazing Pizza - Detalles del pedido</PageTitle>
 
 <div class="main">
     @if (invalidOrder)
@@ -31,6 +31,11 @@
                 <div class="track-order-details">
                     <OrderReview Order="orderWithStatus.Order" />
                 </div>
+            
+                <!-- Apartado que nos permitirá mostrar la localización del pedido-->
+                <div class="track-order-map">
+                    <Map Zoom="13" Markers="orderWithStatus.MapMarkers" />
+                </div>
             </div>
         </div>
     }
@@ -52,7 +57,7 @@
         PollForUpdates();
     }
 
-    // Mtodo para obtener actualizaciones del estado de un pedido
+    // Metodo para obtener actualizaciones del estado de un pedido
     private async void PollForUpdates()
     {
         invalidOrder = false;

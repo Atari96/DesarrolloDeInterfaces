@@ -1,13 +1,17 @@
 ﻿@page "/"
 @inject HttpClient HttpClient
 @inject OrderState OrderState // Inyeccion para poder guardar el estado del pedido aunque no hagamos el pedido //
-@inject NavigationManager NavigationManager
+
+@inject IJSRuntime JS
+
 
 <div class="main">      
     <ul class="pizza-cards">
-        @if (specials is not null)  // Aqui serializaremos la informacion de las pizzas especiales y mostraremos en cards
-        {
-            @foreach (var special in specials) // Recorremos las plantillas de pizzas y extraemos nombres, descrip y precios
+        
+        @if (specials is not null)   // Aqui serializaremos la informacion de las pizzas especiales y mostraremos en cards
+        { // Con @ indicamos que va a ser codigo de csharp que utilizaremos para obtener la informacion, mientras qyue lo pintaremos con html
+            // Recorremos las plantillas de pizzas y extraemos nombres, descrip y precios
+            @foreach (var special in specials) 
             {
                 <li @onclick="@(() => OrderState.ShowConfigurePizzaDialog(special))" style="background-image: url('@special.ImageUrl')">
                     <div class="pizza-info">
@@ -27,9 +31,9 @@
         <div class="order-contents">
             <h2>Tu pedido</h2>
 
-            @foreach (var configuredPizza in Order.Pizzas)
+            @foreach (var configuredPizza in OrderState.Order.Pizzas)
             {
-                <ConfiguredPizzaItem Pizza="configuredPizza" OnRemoved="@(() => OrderState.RemoveConfiguredPizza(configuredPizza))" />
+                <ConfiguredPizzaItem Pizza="configuredPizza" OnRemoved="@(() => RemovePizza(configuredPizza))" />
             }
         </div>
     }
@@ -62,43 +66,16 @@
 
     protected override async Task OnInitializedAsync() // Incializamos y recogemos los especiales
     {
-        specials = await HttpClient.GetFromJsonAsync("specials", BlazingPizza.OrderContext.Default.ListPizzaSpecial);
+        specials = await HttpClient.GetFromJsonAsync<List<PizzaSpecial>>("specials");
     }
 
-    /*void ShowConfigurePizzaDialog(PizzaSpecial special) ESTE METODO ES MOVIDO A OrderState.cs en el paso 4
-                {
-                configuringPizza = new Pizza()
-                {
-                Special = special,
-                SpecialId = special.Id,
-            Size = Pizza.DefaultSize,
-        Toppings = new List<PizzaTopping>(),
-    };
-
-    showingConfigureDialog = true;
-    }*/
-
-    /*void CancelConfigurePizzaDialog() ESTE METODO ES MOVIDO A OrderState.cs
+    async Task RemovePizza(Pizza configuredPizza)
+    {
+        if (await JS.Confirm($"Remove {configuredPizza.Special?.Name} pizza from the order?"))
         {
-        configuringPizza = null;
-    showingConfigureDialog = false;
-    }*/
-
-    /*void ConfirmConfigurePizzaDialog() ESTE METODO ES MOVIDO A OrderState.cs
-        {
-        if (configuringPizza is not null)
-            {
-            order.Pizzas.Add(configuringPizza);
-        configuringPizza = null;
+            OrderState.RemoveConfiguredPizza(configuredPizza);
         }
+    }
 
-        showingConfigureDialog = false;
-    }*/
 
-    /*void RemoveConfiguredPizza(Pizza pizza) ESTE METODO ES MOVIDO A OrderState.cs
-        {
-        order.Pizzas.Remove(pizza);
-    }*/
-
-    
 }
