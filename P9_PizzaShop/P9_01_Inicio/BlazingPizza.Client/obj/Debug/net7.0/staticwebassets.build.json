@@ -1,11 +1,22 @@
 {
   "Version": 1,
-  "Hash": "HiymbudK3eSNm/vm/aNunVjbzleWOlx4GL9jdBF+xa8=",
+  "Hash": "mwzggOS8IoXaqXhcAgaNFSePwxJW4kVq+hqrs586NUw=",
   "Source": "BlazingPizza.Client",
   "BasePath": "/",
   "Mode": "Root",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingComponents\\BlazingComponents.csproj",
+      "Version": 2,
+      "Source": "BlazingComponents",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained"
+    },
     {
       "Identity": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.ComponentsLibrary\\BlazingPizza.ComponentsLibrary.csproj",
       "Version": 2,
@@ -19,6 +30,13 @@
     }
   ],
   "DiscoveryPatterns": [
+    {
+      "Name": "BlazingComponents\\wwwroot",
+      "Source": "BlazingComponents",
+      "ContentRoot": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingComponents\\wwwroot\\",
+      "BasePath": "_content/BlazingComponents",
+      "Pattern": "**"
+    },
     {
       "Name": "BlazingPizza.Client\\wwwroot",
       "Source": "BlazingPizza.Client",
@@ -51,6 +69,91 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\pmora\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.authentication\\7.0.0\\staticwebassets\\AuthenticationService.js"
+    },
+    {
+      "Identity": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingComponents\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\BlazingComponents.bundle.scp.css",
+      "SourceId": "BlazingComponents",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingComponents\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
+      "BasePath": "_content/BlazingComponents",
+      "RelativePath": "BlazingComponents.bundle.scp.css",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ProjectBundle",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingComponents\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\BlazingComponents.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingComponents\\wwwroot\\background.png",
+      "SourceId": "BlazingComponents",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingComponents\\wwwroot\\",
+      "BasePath": "_content/BlazingComponents",
+      "RelativePath": "background.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\background.png"
+    },
+    {
+      "Identity": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingComponents\\wwwroot\\exampleJsInterop.js",
+      "SourceId": "BlazingComponents",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingComponents\\wwwroot\\",
+      "BasePath": "_content/BlazingComponents",
+      "RelativePath": "exampleJsInterop.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\exampleJsInterop.js"
+    },
+    {
+      "Identity": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\BlazingComponents.dll",
+      "SourceId": "BlazingPizza.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/BlazingComponents.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingComponents\\bin\\Debug\\net7.0\\BlazingComponents.dll"
+    },
+    {
+      "Identity": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\BlazingComponents.pdb",
+      "SourceId": "BlazingPizza.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/BlazingComponents.pdb",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "symbol",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingComponents\\bin\\Debug\\net7.0\\BlazingComponents.pdb"
     },
     {
       "Identity": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\BlazingPizza.Client.dll",
@@ -560,7 +663,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\pmora\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\lib\\net7.0\\Microsoft.Extensions.DependencyInjection.Abstractions.dll"
+      "OriginalItemSpec": "C:\\Users\\pmora\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\lib\\net7.0\\Microsoft.Extensions.DependencyInjection.Abstractions.dll"
     },
     {
       "Identity": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.DependencyInjection.dll",
@@ -577,7 +680,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\pmora\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\lib\\net7.0\\Microsoft.Extensions.DependencyInjection.dll"
+      "OriginalItemSpec": "C:\\Users\\pmora\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.0\\lib\\net7.0\\Microsoft.Extensions.DependencyInjection.dll"
     },
     {
       "Identity": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.FileProviders.Abstractions.dll",
@@ -3895,23 +3998,6 @@
       "OriginalItemSpec": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Diagnostics.Tools.dll"
     },
     {
-      "Identity": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\obj\\Debug\\net7.0\\build-gz\\3wCRmc19.gz",
-      "SourceId": "BlazingPizza.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\bin\\Debug\\net7.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.Extensions.DependencyInjection.Abstractions.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.DependencyInjection.Abstractions.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.DependencyInjection.Abstractions.dll"
-    },
-    {
       "Identity": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\obj\\Debug\\net7.0\\build-gz\\472gl+yE.gz",
       "SourceId": "BlazingPizza.Client",
       "SourceType": "Computed",
@@ -4012,6 +4098,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Net.Http.dll"
+    },
+    {
+      "Identity": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\obj\\Debug\\net7.0\\build-gz\\5yGJEwF7.gz",
+      "SourceId": "BlazingPizza.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/BlazingComponents.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\BlazingComponents.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\BlazingComponents.dll"
     },
     {
       "Identity": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\obj\\Debug\\net7.0\\build-gz\\6+8EWo3e.gz",
@@ -4131,23 +4234,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.ServiceModel.Web.dll"
-    },
-    {
-      "Identity": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\obj\\Debug\\net7.0\\build-gz\\7S3VQfFO.gz",
-      "SourceId": "BlazingPizza.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\bin\\Debug\\net7.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.Extensions.DependencyInjection.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.DependencyInjection.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.DependencyInjection.dll"
     },
     {
       "Identity": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\obj\\Debug\\net7.0\\build-gz\\84BAjB7I.gz",
@@ -5340,6 +5426,23 @@
       "OriginalItemSpec": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Linq.dll"
     },
     {
+      "Identity": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\obj\\Debug\\net7.0\\build-gz\\iV9RTIj7.gz",
+      "SourceId": "BlazingPizza.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.DependencyInjection.Abstractions.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.DependencyInjection.Abstractions.dll"
+    },
+    {
       "Identity": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\obj\\Debug\\net7.0\\build-gz\\j+6Xs1gZ.gz",
       "SourceId": "BlazingPizza.Client",
       "SourceType": "Computed",
@@ -5646,6 +5749,23 @@
       "OriginalItemSpec": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Collections.NonGeneric.dll"
     },
     {
+      "Identity": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\obj\\Debug\\net7.0\\build-gz\\NdbtvNZz.gz",
+      "SourceId": "BlazingPizza.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/BlazingComponents.pdb.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\BlazingComponents.pdb",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\BlazingComponents.pdb"
+    },
+    {
       "Identity": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\obj\\Debug\\net7.0\\build-gz\\NftAfVTI.gz",
       "SourceId": "BlazingPizza.Client",
       "SourceType": "Computed",
@@ -5882,6 +6002,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.CSharp.dll"
+    },
+    {
+      "Identity": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\obj\\Debug\\net7.0\\build-gz\\pOSu6Uv6.gz",
+      "SourceId": "BlazingPizza.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.DependencyInjection.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.DependencyInjection.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.DependencyInjection.dll"
     },
     {
       "Identity": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\obj\\Debug\\net7.0\\build-gz\\PyKz9iYS.gz",
@@ -7140,6 +7277,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Runtime.dll"
+    },
+    {
+      "Identity": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\obj\\Debug\\net7.0\\scopedcss\\bundle\\BlazingPizza.Client.styles.css",
+      "SourceId": "BlazingPizza.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
+      "BasePath": "/",
+      "RelativePath": "BlazingPizza.Client.styles.css",
+      "AssetKind": "All",
+      "AssetMode": "CurrentProject",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ApplicationBundle",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\obj\\Debug\\net7.0\\scopedcss\\bundle\\BlazingPizza.Client.styles.css"
     },
     {
       "Identity": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\wwwroot\\css\\bootstrap\\bootstrap.min.css",

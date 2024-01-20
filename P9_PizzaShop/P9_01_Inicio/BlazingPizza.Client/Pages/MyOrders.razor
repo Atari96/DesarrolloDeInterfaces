@@ -1,53 +1,43 @@
 ﻿@page "/myorders"
 @attribute [Authorize]
-@inject HttpClient HttpClient
 @inject OrdersClient OrdersClient
 
 <PageTitle>Don Pablo - Mis Pedidos</PageTitle>
 
 <div class="main">
-    @if (ordersWithStatus is null)
-    {
-        <text>Cargando...</text>
-    }
-    else if (!ordersWithStatus.Any())
-    {
-        <h2>No hay pedidos</h2>
-        <a class="btn btn-success" href="">Realizar un pedido</a>
-    }
-    else
-    {
-        <div class="list-group orders-list">    
-            @foreach (var item in ordersWithStatus)     // Listado de pedidos
-            {
-                <div class="list-group-item">
-                    <div class="col">
-                        <h5>@item.Order.CreatedTime.ToLongDateString()</h5>
-                        Items:
-                        <strong>@item.Order.Pizzas.Count()</strong>;
-                        Precio total:
-                        <strong>£@item.Order.GetFormattedTotalPrice()</strong>
-                    </div>
-                    <div class="col">
-                        Status: <strong>@item.StatusText</strong>
-                    </div>
-                    <div class="col flex-grow-0">
-                        <a href="myorders/@item.Order.OrderId" class="btn btn-success">
-                            Estado &gt;
-                        </a>
-                    </div>
-                </div>
-            }
-        </div>
-    }
+    <TemplatedList Loader="@LoadOrders" ListGroupClass="orders-list">
+        <Loading>Cargando...</Loading>
+        <Empty>
+            <h2>No hay oedidos</h2>
+            <a class="btn btn-success" href="">Realizar un pedido</a>
+        </Empty>
+        <Item Context="item">
+            <div class="col">
+                <h5>@item.Order.CreatedTime.ToLongDateString()</h5>
+                Items:
+                <strong>@item.Order.Pizzas.Count()</strong>;
+                Total price:
+                <strong>£@item.Order.GetFormattedTotalPrice()</strong>
+            </div>
+            <div class="col">
+                Status: <strong>@item.StatusText</strong>
+            </div>
+            <div class="col flex-grow-0">
+                <a href="myorders/@item.Order.OrderId" class="btn btn-success">
+                    Track &gt;
+                </a>
+            </div>
+        </Item>
+    </TemplatedList>
 </div>
 
 @code {
     IEnumerable<OrderWithStatus>? ordersWithStatus;
-
-    protected override async Task OnParametersSetAsync()
     // modificacion para manejar la excepcion en el caso de que el token de autorizacion no sea válido y que nos lleve a la pantalla de error.
+
+    async Task<IEnumerable<OrderWithStatus>> LoadOrders()
     {
+        var ordersWithStatus = Enumerable.Empty<OrderWithStatus>();
         try
         {
             ordersWithStatus = await OrdersClient.GetOrders();
@@ -56,5 +46,6 @@
         {
             ex.Redirect();
         }
+        return ordersWithStatus;
     }
 }
