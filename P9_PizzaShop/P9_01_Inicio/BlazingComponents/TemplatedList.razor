@@ -1,4 +1,10 @@
-﻿@typeparam TItem
+﻿<!-- Este elemento constituye la plantilla de un componente para utilizarlo en los otros proyectos, 
+con la definicion del metodo del bloque haremos la carga de datos de la lista de pedidos-->
+
+<!-- Directiva que define que el componente será de tipo generico llamado Titem-->
+@typeparam TItem
+
+<!--Gestionamos los estados de la carga de datos-->
 
 @if (items is null)
 {
@@ -10,6 +16,7 @@ else if (!items.Any())
 }
 else
 {
+    // Si hay pedidos que mostrar recorremos la lista de items y los mostramos
     <div class="list-group @ListGroupClass">
         @foreach (var item in items)
         {
@@ -24,6 +31,8 @@ else
 }
 
 @code {
+    // Codigo que nos permite cargar datos, definimos una variable item que podría ser nula 
+    // Se definen los parametros que se pintaran en el fragmento de la pagina, en el caso nulo, lista vacia o cuando haya algun item
     IEnumerable<TItem>? items;
 
     [Parameter, EditorRequired] public Func<Task<IEnumerable<TItem>>>? Loader { get; set; }
@@ -32,6 +41,7 @@ else
     [Parameter, EditorRequired] public RenderFragment<TItem>? Item { get; set; }
     [Parameter] public string? ListGroupClass { get; set; }
 
+    // Metodo que se llamaa cuando seestablecen los parametros del componente, en caso de ser no nulo se cargan los datos
     protected override async Task OnParametersSetAsync()
     {
         if (Loader is not null)

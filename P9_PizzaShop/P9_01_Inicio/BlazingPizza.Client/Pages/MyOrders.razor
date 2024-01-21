@@ -5,10 +5,12 @@
 <PageTitle>Don Pablo - Mis Pedidos</PageTitle>
 
 <div class="main">
+    <!-- Se incluye la plantilla de BlazingComponents, en donde se gestiona la información del estado de los pedidos, 
+        haremos la carga de los datos de un pedido o de la lista de pedidos -->
     <TemplatedList Loader="@LoadOrders" ListGroupClass="orders-list">
         <Loading>Cargando...</Loading>
         <Empty>
-            <h2>No hay oedidos</h2>
+            <h2>No hay pedidos</h2>
             <a class="btn btn-success" href="">Realizar un pedido</a>
         </Empty>
         <Item Context="item">
@@ -34,7 +36,7 @@
 @code {
     IEnumerable<OrderWithStatus>? ordersWithStatus;
     // modificacion para manejar la excepcion en el caso de que el token de autorizacion no sea válido y que nos lleve a la pantalla de error.
-
+    // El metodo devuelve el pedido junto con el estado
     async Task<IEnumerable<OrderWithStatus>> LoadOrders()
     {
         var ordersWithStatus = Enumerable.Empty<OrderWithStatus>();
