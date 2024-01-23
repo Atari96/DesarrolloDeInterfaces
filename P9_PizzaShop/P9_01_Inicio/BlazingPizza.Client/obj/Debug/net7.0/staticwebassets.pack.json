@@ -121,6 +121,14 @@
       "PackagePath": "staticwebassets\\index.html"
     },
     {
+      "Id": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\wwwroot\\manifest.json",
+      "PackagePath": "staticwebassets\\manifest.json"
+    },
+    {
+      "Id": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\wwwroot\\service-worker.js",
+      "PackagePath": "staticwebassets\\service-worker.js"
+    },
+    {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.BlazingPizza.Client.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },

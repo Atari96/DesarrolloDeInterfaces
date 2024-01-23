@@ -24,13 +24,23 @@ public class OrdersClient
     public async Task<OrderWithStatus> GetOrder(int orderId) =>
             await httpClient.GetFromJsonAsync($"orders/{orderId}", OrderContext.Default.OrderWithStatus) ?? new();
 
-    // Metodo para pasar el pedido al servidor (post), hay que pasar por parametro el pedido
+    // Metodo para realizar una peticion Post al servidor (post), enviando el pedido, hay que pasar por parametro el pedido
     public async Task<int> PlaceOrder(Order order)
     {
         var response = await httpClient.PostAsJsonAsync("orders", order, OrderContext.Default.Order);
         response.EnsureSuccessStatusCode();
         var orderId = await response.Content.ReadFromJsonAsync<int>();
         return orderId;
+    }
+
+    // Metodo que permite subscribirnos a las notificaciones, se le pasa una notificación
+    // El metodo no tiene que esperar (await) mientras se hace una petición http del tipo put a la direccion notification/susbscribe
+    // La peticion se serializa a Json
+    public async Task SubscribeToNotifications(NotificationSubscription subscription)
+    {
+        var response = await httpClient.PutAsJsonAsync("notifications/subscribe", subscription);
+        // En funcion de la respuesta podria arrojar un codigo de error y lanzará excepcion 
+        response.EnsureSuccessStatusCode();
     }
 
 }

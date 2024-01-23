@@ -2,6 +2,8 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Authorization;
+using WebPush;
+using System.Text.Json;
 
 namespace BlazingPizza.Server;
 
@@ -85,21 +87,45 @@ public class OrdersController : Controller
         return order.OrderId;
     }
 
+    // Metodo que se ocupa del envio y seguimiento de notificaciones, se pasa el pedido y la suscripcion
+    // Cuando cambia el estado del pedido se envia una notificacion
     private static async Task TrackAndSendNotificationsAsync(Order order, NotificationSubscription subscription)
     {
         // In a realistic case, some other backend process would track
         // order delivery progress and send us notifications when it
         // changes. Since we don't have any such process here, fake it.
         await Task.Delay(OrderWithStatus.PreparationDuration);
-        await SendNotificationAsync(order, subscription, "Your order has been dispatched!");
+        await SendNotificationAsync(order, subscription, "Tu pedido ha sido preparadodo!");
 
         await Task.Delay(OrderWithStatus.DeliveryDuration);
-        await SendNotificationAsync(order, subscription, "Your order is now delivered. Enjoy!");
+        await SendNotificationAsync(order, subscription, "Tu pedido ha sido enviado Disfrútalo!");
     }
 
-    private static Task SendNotificationAsync(Order order, NotificationSubscription subscription, string message)
+    private static async Task SendNotificationAsync(Order order, NotificationSubscription subscription, string message)
     {
-        // This will be implemented later
-        return Task.CompletedTask;
+        // For a real application, generate your own
+        // Clave publica y privada del servidor
+        var publicKey = "BLC8GOevpcpjQiLkO7JmVClQjycvTCYWm6Cq_a7wJZlstGTVZvwGFFHMYfXt6Njyvgx_GlXJeo5cSiZ1y4JOx1o";
+        var privateKey = "OrubzSz3yWACscZXjFQrrtDwCKg-TGFuWhluQ2wLXDo";
+
+        // Se crea la peticion de suscripcion con los datos pasados como parametros
+        var pushSubscription = new PushSubscription(subscription.Url, subscription.P256dh, subscription.Auth);
+        var vapidDetails = new VapidDetails("mailto:<someone@example.com>", publicKey, privateKey);
+        var webPushClient = new WebPushClient();
+        try
+        {
+            // Se serializa a Json un objeto que contiene el mansaje y la url
+            var payload = JsonSerializer.Serialize(new
+            {
+                message,
+                url = $"myorders/{order.OrderId}",
+            });
+            // Se envia la notificacion push mediante la biblioteca WebPush
+            await webPushClient.SendNotificationAsync(pushSubscription, payload, vapidDetails);
+        }
+        catch (Exception ex)
+        {
+            Console.Error.WriteLine("Error sending push notification: " + ex.Message);
+        }
     }
 }

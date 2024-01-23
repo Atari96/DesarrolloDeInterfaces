@@ -1,0 +1,17 @@
+// Archivo de manifiesto, donde indicaremos a los navegadores como mostrar la informacion (nombre, colores, iconos, alce, etc)
+{
+  "short_name": "Blazing Pizza",
+  "name": "Blazing Pizza",
+  "icons": [
+    {
+      "src": "img/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#860000",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#860000"
+}

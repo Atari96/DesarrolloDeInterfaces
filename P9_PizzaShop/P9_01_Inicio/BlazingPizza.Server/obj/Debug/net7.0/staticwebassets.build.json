@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "BZGY2c8tbHRy2NXht2PPknKQrYFqW5/AYt6BpQQSank=",
+  "Hash": "kL+wxUadZnR08hPp+DZwYNPm6eckJZVv5SWrD/tT1Pw=",
   "Source": "BlazingPizza.Server",
   "BasePath": "_content/BlazingPizza.Server",
   "Mode": "Default",
@@ -8784,6 +8784,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\wwwroot\\manifest.json",
+      "SourceId": "BlazingPizza.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "manifest.json",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\manifest.json"
+    },
+    {
+      "Identity": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\wwwroot\\service-worker.js",
+      "SourceId": "BlazingPizza.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "service-worker.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\service-worker.js"
     },
     {
       "Identity": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.ComponentsLibrary\\wwwroot\\deliveryMap.js",

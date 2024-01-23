@@ -3,6 +3,7 @@
 @inject OrderState OrderState
 @inject OrdersClient OrdersClient
 @inject NavigationManager NavigationManager
+@inject IJSRuntime JSRuntime
 
 <PageTitle>Blazing Pizza - Checkout</PageTitle>
 
@@ -31,11 +32,38 @@
 
 @code {
     bool isSubmitting;
+
+    // Cuando se inicializa se envia una petición de subscripcion
+    protected override void OnInitialized()
+    {
+        // In the background, ask if they want to be notified about order updates
+        _ = RequestNotificationSubscriptionAsync();
+    }
+
+    // Se define el metodo de peticion de subscripcion, se define la suscripcion de las notificaciones push
+    
+    async Task RequestNotificationSubscriptionAsync()
+    {
+        var subscription = await JSRuntime.InvokeAsync<NotificationSubscription>("blazorPushNotifications.requestSubscription");
+        // Se comprueba que la suscripcion no sea nula, y envia la suscripcion al servidor para que pueda eviar notificaciones al usuario
+        if (subscription is not null)
+        {
+            try
+            {
+                await OrdersClient.SubscribeToNotifications(subscription);
+            }
+            catch (AccessTokenNotAvailableException ex)
+            {
+                ex.Redirect();
+            }
+        }
+    }
     
     async Task PlaceOrder() // Despues de mover a OrderState debemos redireccionar los Order
                             
     {
         isSubmitting = true;
+        // Se define un nuevo pedido y se le asigna un nuevo Id del pedido, luego se resetea el estado del pedido
         // modificacion para manejar la excepcion en el caso de que el token de autorizacion no sea válido y que nos lleve a la pantalla de error.
         try
         {

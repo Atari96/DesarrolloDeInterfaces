@@ -15,7 +15,8 @@
     <PackageReference Include="Microsoft.AspNetCore.ApiAuthorization.IdentityServer" Version="$(AspNetCoreVersion)" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="$(EntityFrameworkVersion)" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="$(EntityFrameworkVersion)" />
-	  <PackageReference Include="WebPush" Version="1.0.12" />
+	<!-- Paquete que gestiona la encriptacion para prpoteger los paquetes que se intercambian -->
+	<PackageReference Include="WebPush" Version="1.0.12" />
   </ItemGroup>
 
   <ItemGroup>
