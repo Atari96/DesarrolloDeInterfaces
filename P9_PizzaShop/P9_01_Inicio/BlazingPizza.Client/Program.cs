@@ -1,4 +1,5 @@
-﻿using BlazingPizza.Client;
+﻿using BlazingPizza;
+using BlazingPizza.Client;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Authentication;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
@@ -16,6 +17,9 @@ builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.
 builder.Services.AddHttpClient<OrdersClient>(client => client.BaseAddress = new Uri(builder.HostEnvironment.BaseAddress))
     .AddHttpMessageHandler<BaseAddressAuthorizationMessageHandler>();
 builder.Services.AddScoped<OrderState>();
+
+// Incorporo el singleton para poder inyectar la clase que me realiza en cambio a modo oscuro
+builder.Services.AddSingleton<ThemeService>();
 
 // Llamada para habilitar los servicios de autenticacion, incluimoss el <PizzaAuthenticationState>
 // La parte options implica el codigo necesario para poder hacer el logout

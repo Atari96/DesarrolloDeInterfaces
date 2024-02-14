@@ -1,4 +1,8 @@
-﻿<!-- Envolvemos todo con CascadingAuthenticationState para que fluya el estado de autenticacion atraves de la app-->
+﻿<!-- 
+    Controla el acceso y autenticacion
+    Envolvemos todo con CascadingAuthenticationState para que fluya el estado de autenticacion atraves de la app
+    
+-->
 <CascadingAuthenticationState>
     <Router AppAssembly="typeof(Program).Assembly" Context="routeData">
         <Found>
@@ -13,7 +17,7 @@
                 </Authorizing>
             </AuthorizeRouteView>
         </Found>
-        <NotFound>
+        <NotFound>  <!-- Mensaje que personaliza en el caso de no encontrar la ruta de una pagina-->
             <LayoutView Layout="typeof(MainLayout)">
                 <div class="main">Lo sentimos, no hay nada en esta direccion.</div>
             </LayoutView>

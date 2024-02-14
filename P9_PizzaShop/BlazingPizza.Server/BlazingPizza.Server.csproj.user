@@ -4,6 +4,7 @@
     <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
   </PropertyGroup>
   <PropertyGroup>
-    <ActiveDebugProfile>BlazingPizza.Server</ActiveDebugProfile>
+    <ActiveDebugProfile>IIS Express</ActiveDebugProfile>
+    <NameOfLastUsedPublishProfile>C:\Users\pmora\Documents\FP\SEGUNDO\5_DesarrolloInterfaces\PRACTICAS\P9_PizzaShop\BlazingPizza.Server\Properties\PublishProfiles\BlazingPizzaServer20240126125511 - Web Deploy.pubxml</NameOfLastUsedPublishProfile>
   </PropertyGroup>
 </Project>

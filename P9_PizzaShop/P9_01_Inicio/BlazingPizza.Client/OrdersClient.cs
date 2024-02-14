@@ -4,7 +4,7 @@ namespace BlazingPizza.Client;
 
 public class OrdersClient
 {
-    // Declaramos el httpclient para enviar pticiones y respuestas solo de lectura para que no pueda ser modificado
+    // Declaramos el httpclient para enviar peticiones y respuestas solo de lectura para que no pueda ser modificado
     private readonly HttpClient httpClient;
 
     public OrdersClient(HttpClient httpClient)

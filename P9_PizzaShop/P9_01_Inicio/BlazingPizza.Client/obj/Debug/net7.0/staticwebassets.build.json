@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "LXVug5fxOChzXwafwOeUDZeUt1OMr44DYzdhzxaiAdE=",
+  "Hash": "ph1K7/s3/ATPu+G/qokX812WKb+9s98ZkObbK2a473E=",
   "Source": "BlazingPizza.Client",
   "BasePath": "/",
   "Mode": "Root",
@@ -7296,6 +7296,23 @@
       "OriginalItemSpec": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\obj\\Debug\\net7.0\\scopedcss\\bundle\\BlazingPizza.Client.styles.css"
     },
     {
+      "Identity": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\wwwroot\\cambiarTema.js",
+      "SourceId": "BlazingPizza.Client",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "cambiarTema.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\cambiarTema.js"
+    },
+    {
       "Identity": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "SourceId": "BlazingPizza.Client",
       "SourceType": "Discovered",
@@ -7500,6 +7517,23 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
+      "Identity": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\wwwroot\\css\\site2.css",
+      "SourceId": "BlazingPizza.Client",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "css/site2.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\site2.css"
+    },
+    {
       "Identity": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\wwwroot\\img\\bike.svg",
       "SourceId": "BlazingPizza.Client",
       "SourceType": "Discovered",
@@ -7549,6 +7583,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\logo.svg"
+    },
+    {
+      "Identity": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\wwwroot\\img\\modo_oscuro.svg",
+      "SourceId": "BlazingPizza.Client",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "img/modo_oscuro.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\modo_oscuro.svg"
     },
     {
       "Identity": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\wwwroot\\img\\pizzas\\bacon.jpg",
@@ -7787,6 +7838,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\service-worker.js"
+    },
+    {
+      "Identity": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\wwwroot\\site.css",
+      "SourceId": "BlazingPizza.Client",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "site.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\wwwroot\\site2.css",
+      "SourceId": "BlazingPizza.Client",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "site2.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\site2.css"
     },
     {
       "Identity": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.ComponentsLibrary\\wwwroot\\deliveryMap.js",

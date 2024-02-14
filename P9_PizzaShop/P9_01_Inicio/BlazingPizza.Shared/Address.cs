@@ -1,4 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations; // Incorporamos las anotaciones de campos obligatorios y longitudes
+﻿using System.ComponentModel.DataAnnotations; // Incorporamos las anotaciones de campos obligatorios y longitudes en el servidor
 namespace BlazingPizza;
 
 public class Address

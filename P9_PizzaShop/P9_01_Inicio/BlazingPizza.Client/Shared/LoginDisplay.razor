@@ -1,5 +1,5 @@
 ﻿@inject NavigationManager Navigation
-
+<!-- Componente que gestiona el login en la barra de navegación -->
 <div class="user-info">
     <AuthorizeView>
         <Authorizing>
@@ -8,10 +8,12 @@
         <Authorized>
             <img src="img/user.svg" />
             <div>
+                <!-- En caso de estar logueados nos muestra un boton para desloguearnos -->
                 <a href="authentication/profile" class="username">@context.User.Identity.Name</a>
                 <button class="btn btn-link sign-out" @onclick="BeginSignOut">Salir</button>
             </div>
         </Authorized>
+        <!-- En caso de no estra registrado nos muestra los dos botones en la barra superior-->
         <NotAuthorized>
             <a class="sign-in" href="authentication/register">Registro</a>
             <a class="sign-in" href="authentication/login">Acceso</a>
@@ -20,6 +22,7 @@
 </div>
 
 @code {
+    // Metodo que implementa el salir y desloguearse de la aplicacion
     void BeginSignOut()
     {
         Navigation.NavigateToLogout("authentication/logout");

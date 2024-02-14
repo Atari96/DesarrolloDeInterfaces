@@ -1,6 +1,6 @@
 ﻿@inject HttpClient HttpClient
 
-<h3>ConfigurePizzaDialog</h3>
+<h3>Configura tu pizza</h3>
 
 <!-- Para que poder utilizar la plantilla del componente de la etapa 8 tenemos que ajustar los contenedores del dialog-->
         <div class="dialog-title">
@@ -12,7 +12,7 @@
                 <label>Size:</label>
                 <input type="range" min="@Pizza.MinimumSize" max="@Pizza.MaximumSize" step="1" @bind="Pizza.Size" @bind:event="oninput" />
                 <span class="size-label">
-                    @(Pizza.Size)" (£@(Pizza.GetFormattedTotalPrice()))
+                    @(Pizza.Size)" (€@(Pizza.GetFormattedTotalPrice()))
                 </span>
             </div>
             <div>
@@ -29,11 +29,12 @@
                 }
                 else
                 {
+                    <!-- Definimos el desplegable en donde podremos seleccionar lor ingredientes-->
                     <select class="custom-select" @onchange="ToppingSelected">
                         <option value="-1" disabled selected>(select)</option>
                         @for (var i = 0; i < toppings.Count; i++)
                         {
-                            <option value="@i">@toppings[i].Name - (£@(toppings[i].GetFormattedPrice()))</option>
+                            <option value="@i">@toppings[i].Name - (€@(toppings[i].GetFormattedPrice()))</option>
                         }
                     </select>
                 }

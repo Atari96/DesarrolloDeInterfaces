@@ -8,7 +8,9 @@
 
         public Order Order { get; private set; } = new Order();
 
-        public void ShowConfigurePizzaDialog(PizzaSpecial special) // Este metodo es movido desde el index.razor
+        // Este metodo es movido desde el index.razor
+        // Se encarga de mostrar la pantalla en donde diseñaremos la pizza
+        public void ShowConfigurePizzaDialog(PizzaSpecial special) 
         {
             ConfiguringPizza = new Pizza()
             {
@@ -21,7 +23,9 @@
             ShowingConfigureDialog = true;
         }
 
-        public void CancelConfigurePizzaDialog() // Este metodo es movido desde el index.razor
+        // Este metodo es movido desde el index.razor
+        // Se encarga de cerrar el cuadro de la configuracion
+        public void CancelConfigurePizzaDialog() 
         {
             ConfiguringPizza = null;
 

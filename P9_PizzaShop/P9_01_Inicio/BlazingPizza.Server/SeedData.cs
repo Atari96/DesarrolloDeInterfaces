@@ -8,47 +8,47 @@ public static class SeedData
         {
             new Topping()
             {
-                    Name = "Extra cheese",
+                    Name = "Extra de queso",
                     Price = 2.50m,
             },
             new Topping()
             {
-                    Name = "American bacon",
+                    Name = "Bacon americano",
                     Price = 2.99m,
             },
             new Topping()
             {
-                    Name = "British bacon",
+                    Name = "Bacon ingles",
                     Price = 2.99m,
             },
             new Topping()
             {
-                    Name = "Canadian bacon",
+                    Name = "Bacon canadiense",
                     Price = 2.99m,
             },
             new Topping()
             {
-                    Name = "Tea and crumpets",
+                    Name = "Te y bollos",
                     Price = 5.00m
             },
             new Topping()
             {
-                    Name = "Fresh-baked scones",
+                    Name = "Bollos horneados",
                     Price = 4.50m,
             },
             new Topping()
             {
-                    Name = "Bell peppers",
+                    Name = "Pimiento",
                     Price = 1.00m,
             },
             new Topping()
             {
-                    Name = "Onions",
+                    Name = "Cebolla",
                     Price = 1.00m,
             },
             new Topping()
             {
-                    Name = "Mushrooms",
+                    Name = "Champiñones",
                     Price = 1.00m,
             },
             new Topping()
@@ -58,62 +58,62 @@ public static class SeedData
             },
             new Topping()
             {
-                    Name = "Duck sausage",
+                    Name = "Salsa de pato",
                     Price = 3.20m,
             },
             new Topping()
             {
-                    Name = "Venison meatballs",
+                    Name = "Bolas de carne de venado",
                     Price = 2.50m,
             },
             new Topping()
             {
-                    Name = "Served on a silver platter",
+                    Name = "Servida en plato de plata",
                     Price = 250.99m,
             },
             new Topping()
             {
-                    Name = "Lobster on top",
+                    Name = "Langosta",
                     Price = 64.50m,
             },
             new Topping()
             {
-                    Name = "Sturgeon caviar",
+                    Name = "Caviar",
                     Price = 101.75m,
             },
             new Topping()
             {
-                    Name = "Artichoke hearts",
+                    Name = "Corazones de alcachofa",
                     Price = 3.40m,
             },
             new Topping()
             {
-                    Name = "Fresh tomatoes",
+                    Name = "Tomatitos frescos",
                     Price = 1.50m,
             },
             new Topping()
             {
-                    Name = "Basil",
+                    Name = "Albahaca",
                     Price = 1.50m,
             },
             new Topping()
             {
-                    Name = "Steak (medium-rare)",
+                    Name = "Carne",
                     Price = 8.50m,
             },
             new Topping()
             {
-                    Name = "Blazing hot peppers",
+                    Name = "Pimiento picante",
                     Price = 4.20m,
             },
             new Topping()
             {
-                    Name = "Buffalo chicken",
+                    Name = "Pechuga de bufalo",
                     Price = 5.00m,
             },
             new Topping()
             {
-                    Name = "Blue cheese",
+                    Name = "Queso azul",
                     Price = 2.50m,
             },
         };
@@ -122,24 +122,24 @@ public static class SeedData
         {
             new PizzaSpecial()
             {
-                    Name = "Basic Cheese Pizza",
-                    Description = "It's cheesy and delicious. Why wouldn't you want one?",
+                    Name = "Pizza de superqueso",
+                    Description = "Super queso. Una buena elección",
                     BasePrice = 9.99m,
                     ImageUrl = "img/pizzas/cheese.jpg",
             },
             new PizzaSpecial()
             {
                     Id = 2,
-                    Name = "The Baconatorizor",
-                    Description = "It has EVERY kind of bacon",
+                    Name = "Rey del bacon",
+                    Description = "Con todos los tipos de bacon",
                     BasePrice = 11.99m,
                     ImageUrl = "img/pizzas/bacon.jpg",
             },
             new PizzaSpecial()
             {
                     Id = 3,
-                    Name = "Classic pepperoni",
-                    Description = "It's the pizza you grew up with, but Blazing hot!",
+                    Name = "Pizza diablo",
+                    Description = "Te gusta el picante? Es la tuya!",
                     BasePrice = 10.50m,
                     ImageUrl = "img/pizzas/pepperoni.jpg",
             },
@@ -147,15 +147,15 @@ public static class SeedData
             {
                     Id = 4,
                     Name = "Buffalo chicken",
-                    Description = "Spicy chicken, hot sauce and bleu cheese, guaranteed to warm you up",
+                    Description = "Pollo picante, salsa picante y queso azul, te calentará como un bufalo",
                     BasePrice = 12.75m,
                     ImageUrl = "img/pizzas/meaty.jpg",
             },
             new PizzaSpecial()
             {
                     Id = 5,
-                    Name = "Mushroom Lovers",
-                    Description = "It has mushrooms. Isn't that obvious?",
+                    Name = "Amantes del champiñon",
+                    Description = "Es la que come David el gnomo",
                     BasePrice = 11.00m,
                     ImageUrl = "img/pizzas/mushroom.jpg",
             },
@@ -163,23 +163,23 @@ public static class SeedData
             {
                     Id = 6,
                     Name = "The Brit",
-                    Description = "When in London...",
+                    Description = "En Londres...",
                     BasePrice = 10.25m,
                     ImageUrl = "img/pizzas/brit.jpg",
             },
             new PizzaSpecial()
             {
                     Id = 7,
-                    Name = "Veggie Delight",
-                    Description = "It's like salad, but on a pizza",
+                    Name = "Delicia vegetariana",
+                    Description = "Para los no carnivoros",
                     BasePrice = 11.50m,
                     ImageUrl = "img/pizzas/salad.jpg",
             },
             new PizzaSpecial()
             {
                     Id = 8,
-                    Name = "Margherita",
-                    Description = "Traditional Italian pizza with tomatoes and basil",
+                    Name = "Margarita",
+                    Description = "Pizza tradicional de tomate y albahaca",
                     BasePrice = 9.99m,
                     ImageUrl = "img/pizzas/margherita.jpg",
             },

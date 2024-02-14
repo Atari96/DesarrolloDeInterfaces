@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\BlazingPizza.Client.styles.css"
     },
     {
+      "Id": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\wwwroot\\cambiarTema.js",
+      "PackagePath": "staticwebassets\\cambiarTema.js"
+    },
+    {
       "Id": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
     },
@@ -61,6 +65,10 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\wwwroot\\css\\site2.css",
+      "PackagePath": "staticwebassets\\css\\site2.css"
+    },
+    {
       "Id": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\wwwroot\\img\\bike.svg",
       "PackagePath": "staticwebassets\\img\\bike.svg"
     },
@@ -71,6 +79,10 @@
     {
       "Id": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\wwwroot\\img\\logo.svg",
       "PackagePath": "staticwebassets\\img\\logo.svg"
+    },
+    {
+      "Id": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\wwwroot\\img\\modo_oscuro.svg",
+      "PackagePath": "staticwebassets\\img\\modo_oscuro.svg"
     },
     {
       "Id": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\wwwroot\\img\\pizza-slice.svg",
@@ -127,6 +139,14 @@
     {
       "Id": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\wwwroot\\service-worker.js",
       "PackagePath": "staticwebassets\\service-worker.js"
+    },
+    {
+      "Id": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\wwwroot\\site.css",
+      "PackagePath": "staticwebassets\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\wwwroot\\site2.css",
+      "PackagePath": "staticwebassets\\site2.css"
     },
     {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.BlazingPizza.Client.Microsoft.AspNetCore.StaticWebAssets.props",

@@ -1,5 +1,9 @@
 ﻿@inherits LayoutComponentBase
 
+@using System.Threading.Tasks
+@inject IJSRuntime JSRuntime
+@inject ThemeService themeService
+
 <div class="top-bar">
     <a class="logo" href="">
         <img src="img/pizzeriaDonPablo.svg" />
@@ -9,7 +13,8 @@
         <img src="img/pizza-slice.svg" />
         <div>Elije tu Pizza</div>
     </NavLink>
-    <!-- Rodeamos la pestaña de Mis Pedidos con el Authorize para que solo sea visto por usuarios autenticados-->
+    
+    <!-- Rodeamos la pestaña de Mis Pedidos con el Authorize para que solo sea visto por usuarios logueados y autenticados-->
     <AuthorizeView>
         <NavLink href="myorders" class="nav-tab">
             <img src="img/bike.svg" />
@@ -17,10 +22,40 @@
         </NavLink>
     </AuthorizeView>
 
-    <!-- Para mostrar el logueo incorporamos el loginDisplay-->
+    <!-- Introducimos un boton para activar el modo oscuro-->
+    <div  style="width: 40%;"></div>
+
+    <div href="" class="nav-tab" Match="NavLinkMatch.All" >
+        <button @onclick="CambiarModoOscuro"><img src="img/modo_oscuro.svg" style=" width: 30px; height: 30px;" /></button>
+    </div>
+
+    <!-- Para mostrar el logueo incorporamos el loginDisplay, viene de una libreria donde se define todo-->
     <LoginDisplay />
 </div>
 
 <div class="content">
     @Body
 </div>
+
+
+@code {
+
+    async Task CambiarModoOscuro()
+    {
+        Console.WriteLine("Modo cambiar oscuro en mainlayout");
+        //await themeService.CambiarModoOscuro(); // Cambia a un método asincrónico
+
+        if (themeService.CurrentTheme == "site")
+        {
+            await JSRuntime.InvokeVoidAsync("cambiarTema", "css/site.css");
+            Console.WriteLine("Modo cambiar oscuro site en mainlayout");
+        }
+        else
+        {
+            await JSRuntime.InvokeVoidAsync("cambiarTema", "css/site2.css");
+            Console.WriteLine("Modo cambiar oscuro site2 en mainlayout");
+        }
+        StateHasChanged();
+    }
+}
+

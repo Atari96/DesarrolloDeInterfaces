@@ -1,23 +1,27 @@
 ﻿@page "/myorders/{orderId:int}"
 @attribute [Authorize]
-@using System.Threading
+@using System.Threading    
 @inject OrdersClient OrdersClient
-@implements IDisposable
+@implements IDisposable // Interfaz que utilizamos para evitar y cancelar solicitudes para que no se sobrecargue la amemoria
 
 <PageTitle>Blazing Pizza - Detalles del pedido</PageTitle>
+<!-- Pagina que gestiona los estados de un pedido -->
 
 <div class="main">
-    @if (invalidOrder)
+    <!-- Caso en el que el pedido no es valido-->
+    @if (invalidOrder)  
     {
         <h2>Nada que mostrar</h2>
         <p>Lo sentimos, este pedido no puede ser cargado.</p>
     }
+    <!-- Caso en el que el pedido no es nulo -->
     else if (orderWithStatus is null)
     {
         <text>Cargando...</text>
     }
     else
     {
+    <!-- Caso en el que el pedido es correcto, establece el estado del pedido, muestra detalles, y muestra plano localizacion-->
         <div class="track-order">
             <div class="track-order-title">
                 <h2>
@@ -67,7 +71,9 @@
             // Incluimos el manejo de la excepcion que puede ser producida por un token no valido
             try
             {
+                // cambiamos el estado del pedido, hay que esperar a que llegue el pedido segun su id
                 orderWithStatus = await OrdersClient.GetOrder(OrderId);
+                // El metodo stateHasChanged hace que se produzca una actualizacion del estado
                 StateHasChanged();
 
                 if (orderWithStatus.IsDelivered)
@@ -76,6 +82,7 @@
                 }
                 else
                 {
+                    // Establece un tiempo de espera para poder observar que va cambiando de estado
                     await Task.Delay(4000);
                 }
             }
@@ -93,6 +100,7 @@
             }
         }
     }
+    // Metodo que nos permite liberar la memoria en caso de cancelar las peticiones
     void IDisposable.Dispose()
     {
         pollingCancellationToken?.Cancel();

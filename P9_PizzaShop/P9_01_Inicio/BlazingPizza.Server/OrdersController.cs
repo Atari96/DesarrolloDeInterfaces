@@ -7,6 +7,9 @@ using System.Text.Json;
 
 namespace BlazingPizza.Server;
 
+// En el servidor tenemos que realizar la validación de los datos introducidos por el cliente
+// El ApiController nos permite hacer anotaciones sobre los distintos campos
+
 [Route("orders")]
 [ApiController]
 [Authorize]

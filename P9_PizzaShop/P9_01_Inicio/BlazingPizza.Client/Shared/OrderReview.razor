@@ -1,10 +1,13 @@
-﻿@foreach (var pizza in Order.Pizzas)
+﻿<!-- Pagina donde van a aparecer los detalles de las pizzas que aparecen en mis pedidos cuando el pedido es valido-->
+<!-- Es llamado desde OrderDetails.razor-->
+<!-- Recorre las pizzas de un pedido y muestra el tamaño, nombre, precio e ingredientes-->
+@foreach (var pizza in Order.Pizzas)
 {
     <p>
         <strong>
             @(pizza.Size)"
             @pizza.Special?.Name
-            (£@pizza.GetFormattedTotalPrice())
+            (€@pizza.GetFormattedTotalPrice())
         </strong>
     </p>
 
@@ -19,7 +22,7 @@
 <p>
     <strong>
         Total price:
-        £@Order.GetFormattedTotalPrice()
+        €@Order.GetFormattedTotalPrice()
     </strong>
 </p>
 

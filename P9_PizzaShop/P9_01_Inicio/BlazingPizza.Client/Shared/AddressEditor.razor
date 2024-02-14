@@ -1,4 +1,5 @@
-﻿<!-- Formulario con campos para introducir las direcciones de entrega-->
+﻿<!-- Formulario con campos para introducir las direcciones del cliente y entrega-->
+<!-- En los campos de formulario incluimos el mensaje de validación ValidationMessage-->
 <div class="form-field">
     <label>Nombre:</label>
     <div>
@@ -47,5 +48,6 @@
 </div>
 
 @code {
+    // El parametro que pasamos a la pagina son los correspondientes a la clase address
     [Parameter, EditorRequired] public Address Address { get; set; } = new();
 }
