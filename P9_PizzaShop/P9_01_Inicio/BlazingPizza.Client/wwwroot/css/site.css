@@ -21,7 +21,7 @@ form {
 
 .top-bar {
     height: 5rem;
-    background-color: rgb(184,99,184);
+    background-color: deeppink;
     background-image: linear-gradient(rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.25) 25%, rgba(0,0,0,0) 70%);
     display: flex;
     align-items: stretch;
@@ -160,6 +160,40 @@ form {
         .pizza-cards > li:hover {
             transform: scale(1.02);
         }
+
+/* Estilos solo para las cartas de promociones */
+.promociones-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.promocion-card {
+    width: 300px;
+    margin: 10px;
+    border: 5px solid #ccc;
+    border-radius: 5px;
+}
+
+.promocion-content {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+
+    .promocion-content h6 {
+        text-align: center;
+        padding: 10px;
+        margin: 0;
+    }
+
+    .promocion-content img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 5px 5px 0 0;
+    }
 
 .pizza-info {
     border-radius: 0.5rem;

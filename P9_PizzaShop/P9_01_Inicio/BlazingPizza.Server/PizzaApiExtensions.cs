@@ -43,6 +43,14 @@ public static class PizzaApiExtensions
 
         });
 
+        // Promociones
+        app.MapGet("/promociones", async (PizzaStoreContext db) => {
+
+            var promociones = await db.Promociones.ToListAsync();
+            return Results.Ok(promociones);
+
+        });
+
         // Toppings
         app.MapGet("/toppings", async (PizzaStoreContext db) => {
             var toppings = await db.Toppings.OrderBy(t => t.Name).ToListAsync();

@@ -1,0 +1,32 @@
+﻿@page "/promociones"
+@attribute [Authorize]
+@inject HttpClient HttpClient
+
+@using System.Net.Http.Json
+
+<PageTitle>Don Pablo - Mis Promociones</PageTitle>
+
+<div style="display: flex; flex-wrap: wrap; justify-content: center;">
+    @if (promociones != null)
+    {
+        @foreach (var promocion in promociones)
+        {
+            <div style="width: 300px; margin: 10px; border: 5px solid #ccc; border-radius: 5px;">
+                <div style="background-color: #f0f0f0; border-radius: 5px 5px 0 0; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); height: 100%;">
+                    <h6 style="text-align: center; padding: 10px; margin: 0;">@promocion.Name</h6>
+                    <img src="@promocion.ImagenUrl" style="display: block; width: 100%; height: auto; border-radius: 5px 5px 0 0;">
+                </div>
+            </div>
+        }
+    }
+</div>
+
+@code {
+    List<Promocion>? promociones;
+
+    protected override async Task OnInitializedAsync()
+    {
+        promociones = await HttpClient.GetFromJsonAsync<List<Promocion>>("promociones");
+    }
+}
+

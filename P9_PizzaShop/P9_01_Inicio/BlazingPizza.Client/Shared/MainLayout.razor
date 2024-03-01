@@ -22,6 +22,13 @@
         </NavLink>
     </AuthorizeView>
 
+    <AuthorizeView>
+        <NavLink href="promociones" class="nav-tab">
+            <img src="img/promocion.svg" />
+            <div>Mis Promociones</div>
+        </NavLink>
+    </AuthorizeView>
+
     <!-- Introducimos un boton para activar el modo oscuro-->
     <div  style="width: 40%;"></div>
 
@@ -42,20 +49,34 @@
 
     async Task CambiarModoOscuro()
     {
+        
         Console.WriteLine("Modo cambiar oscuro en mainlayout");
         //await themeService.CambiarModoOscuro(); // Cambia a un método asincrónico
 
-        if (themeService.CurrentTheme == "site")
+        if (themeService.CurrentTheme == "site2")
         {
-            await JSRuntime.InvokeVoidAsync("cambiarTema", "css/site.css");
+            await JSRuntime.InvokeVoidAsync("cambiarTema", "site.css");
             Console.WriteLine("Modo cambiar oscuro site en mainlayout");
         }
         else
         {
-            await JSRuntime.InvokeVoidAsync("cambiarTema", "css/site2.css");
+            await JSRuntime.InvokeVoidAsync("cambiarTema", "site.css");
             Console.WriteLine("Modo cambiar oscuro site2 en mainlayout");
         }
         StateHasChanged();
     }
+    /*async Task CambiarModoOscuro()
+    {
+        Console.WriteLine("Modo cambiar oscuro en mainlayout");
+
+        string cssFile = themeService.CurrentTheme == "site" ? "site.css" : "site2.css";
+        Console.WriteLine("Valor de cssFile : " + cssFile); // Imprime el valor de cssFile
+
+        // Llama a la función JavaScript con el valor de cssFile
+        await JSRuntime.InvokeVoidAsync("cambiarTema", cssFile);
+
+        Console.WriteLine("Modo cambiar oscuro en mainlayout");
+        StateHasChanged();
+    }*/
 }
 

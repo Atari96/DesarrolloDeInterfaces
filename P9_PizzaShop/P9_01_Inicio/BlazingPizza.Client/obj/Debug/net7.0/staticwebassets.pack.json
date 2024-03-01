@@ -105,6 +105,10 @@
       "PackagePath": "staticwebassets\\img\\pizzas\\margherita.jpg"
     },
     {
+      "Id": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\wwwroot\\img\\pizzas\\marinera.jpg",
+      "PackagePath": "staticwebassets\\img\\pizzas\\marinera.jpg"
+    },
+    {
       "Id": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\wwwroot\\img\\pizzas\\meaty.jpg",
       "PackagePath": "staticwebassets\\img\\pizzas\\meaty.jpg"
     },
@@ -117,12 +121,28 @@
       "PackagePath": "staticwebassets\\img\\pizzas\\pepperoni.jpg"
     },
     {
+      "Id": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\wwwroot\\img\\pizzas\\promocion2botellas.jpg",
+      "PackagePath": "staticwebassets\\img\\pizzas\\promocion2botellas.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\wwwroot\\img\\pizzas\\promocion2pizzas.jpg",
+      "PackagePath": "staticwebassets\\img\\pizzas\\promocion2pizzas.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\wwwroot\\img\\pizzas\\promocion3pizzas.jpg",
+      "PackagePath": "staticwebassets\\img\\pizzas\\promocion3pizzas.jpg"
+    },
+    {
       "Id": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\wwwroot\\img\\pizzas\\salad.jpg",
       "PackagePath": "staticwebassets\\img\\pizzas\\salad.jpg"
     },
     {
       "Id": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\wwwroot\\img\\pizzeriaDonPablo.svg",
       "PackagePath": "staticwebassets\\img\\pizzeriaDonPablo.svg"
+    },
+    {
+      "Id": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\wwwroot\\img\\promocion.svg",
+      "PackagePath": "staticwebassets\\img\\promocion.svg"
     },
     {
       "Id": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.Client\\wwwroot\\img\\user.svg",

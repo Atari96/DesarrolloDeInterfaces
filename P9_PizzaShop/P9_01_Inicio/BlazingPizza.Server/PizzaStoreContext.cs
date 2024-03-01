@@ -19,6 +19,9 @@ public class PizzaStoreContext : ApiAuthorizationDbContext<PizzaStoreUser>
 
     public DbSet<PizzaSpecial> Specials { get; set; }
 
+    // Nueva llamada para coger los datos de la tabla de la base de datos
+    public DbSet<Promocion> Promociones { get; set; }
+
     public DbSet<Topping> Toppings { get; set; }
 
     public DbSet<NotificationSubscription> NotificationSubscriptions { get; set; }

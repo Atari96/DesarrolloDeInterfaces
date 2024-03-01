@@ -9,8 +9,8 @@
     <base href="/" />
     <link rel="icon" href="img/icon-512.png" />
     <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
-    <link id="site" href="css/site.css" rel="stylesheet" />
-    <link id="site2" href="css/site2.css" rel="stylesheet" />
+    <link id="site" href="site.css" rel="stylesheet" />
+    <link id="site2" href="site2.css" rel="stylesheet" />
     <link href="_content/BlazingPizza.ComponentsLibrary/leaflet/leaflet.css" rel="stylesheet" />
     <!-- Añadimos en la cabecera donde el navegador puede encontrar el archivo manifest que le diga como mostrar la página -->
     <link rel="manifest" href="manifest.json" />
@@ -18,7 +18,7 @@
 
 </head>
 <body>
-    <script src="cambiarTema.js"/>
+
     <div id="app">
         <div class="loading-bar"></div>
     </div>
@@ -37,6 +37,7 @@
     <script src="_content/BlazingPizza.ComponentsLibrary/leaflet/leaflet.js"></script>
     <!-- Incluimos el script para Habilitar el service-worker en nuestro navegador-->
     <script>navigator.serviceWorker.register('service-worker.js');</script>
+    <script src="cambiarTema.js"></script>
 
 
 </body>
