@@ -1,7 +1,12 @@
 ﻿@page "/authentication/{action}"
 @inject OrderState OrderState
 
-<!-- Este componente esta encaminado a la persistencia de pedidos cuando nos autenticamos como un usuario-->
+@*<summary>
+    Este componente esta encaminado a la persistencia de pedidos cuando nos autenticamos como un usuario
+    Llamada para persistir el pedido actual cuando nos autenticamos
+    Metodo que se ejecuta cuando se autentica un usuario, cargando el metodo replace order
+</summary>*@
+
 
 <RemoteAuthenticatorViewCore 
     TAuthenticationState="PizzaAuthenticationState"

@@ -2,7 +2,14 @@
 
 @using System.Threading.Tasks
 @inject IJSRuntime JSRuntime
-@inject ThemeService themeService
+
+@*<summary>
+    Es un archivo de diseño compartido que define la estructura principal de diseño para todas las páginas dentro del proyecto.
+    En esencia, actúa como una plantilla maestra que define la disposición común de los elementos en todas las páginas del sitio
+    Rodeamos la pestaña de Mis Pedidos con el Authorize para que solo sea visto por usuarios logueados y autenticados
+    Introducimos un boton para activar el modo oscuro
+</summary>*@
+
 
 <div class="top-bar">
     <a class="logo" href="">
@@ -30,12 +37,8 @@
     </AuthorizeView>
 
     <!-- Introducimos un boton para activar el modo oscuro-->
-    <div  style="width: 40%;"></div>
-
-    <div href="" class="nav-tab" Match="NavLinkMatch.All" >
-        <button @onclick="CambiarModoOscuro"><img src="img/modo_oscuro.svg" style=" width: 30px; height: 30px;" /></button>
-    </div>
-
+    <a class="sign-in" href="/" @onclick="CambiarModoOscuro">MOdo oscuro</a> 
+    
     <!-- Para mostrar el logueo incorporamos el loginDisplay, viene de una libreria donde se define todo-->
     <LoginDisplay />
 </div>
@@ -46,37 +49,14 @@
 
 
 @code {
+    private int tog = 0;
+    string cssFile = "css/site.css";
 
-    async Task CambiarModoOscuro()
+    private async Task CambiarModoOscuro()
     {
-        
-        Console.WriteLine("Modo cambiar oscuro en mainlayout");
-        //await themeService.CambiarModoOscuro(); // Cambia a un método asincrónico
-
-        if (themeService.CurrentTheme == "site2")
-        {
-            await JSRuntime.InvokeVoidAsync("cambiarTema", "site.css");
-            Console.WriteLine("Modo cambiar oscuro site en mainlayout");
-        }
-        else
-        {
-            await JSRuntime.InvokeVoidAsync("cambiarTema", "site.css");
-            Console.WriteLine("Modo cambiar oscuro site2 en mainlayout");
-        }
-        StateHasChanged();
-    }
-    /*async Task CambiarModoOscuro()
-    {
-        Console.WriteLine("Modo cambiar oscuro en mainlayout");
-
-        string cssFile = themeService.CurrentTheme == "site" ? "site.css" : "site2.css";
-        Console.WriteLine("Valor de cssFile : " + cssFile); // Imprime el valor de cssFile
-
-        // Llama a la función JavaScript con el valor de cssFile
+        cssFile = (tog == 0) ? "css/site2" : "css/site.css";
+        tog = (tog == 0) ? 1 : 0;
         await JSRuntime.InvokeVoidAsync("cambiarTema", cssFile);
-
-        Console.WriteLine("Modo cambiar oscuro en mainlayout");
-        StateHasChanged();
-    }*/
+    }
 }
 

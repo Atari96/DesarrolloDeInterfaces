@@ -1,4 +1,12 @@
 ﻿@inject NavigationManager Navigation
+
+@*<summary>
+    Componente que gestiona el login en la barra de navegación
+    En caso de estar logueados nos muestra un boton para desloguearnos
+    En caso de no estra registrado nos muestra los dos botones en la barra superior
+    Metodo que implementa el salir y desloguearse de la aplicacion
+</summary>*@
+
 <!-- Componente que gestiona el login en la barra de navegación -->
 <div class="user-info">
     <AuthorizeView>
@@ -21,10 +29,64 @@
     </AuthorizeView>
 </div>
 
+<!-- Cuadro de diálogo para confirmar salida 
+<Dialog @bind:isOpen="@showDialog" Width="400px" Height="200px" Modal>
+    <DialogTitle>Confirmar salida</DialogTitle>
+    <DialogContent>
+        ¿Estás seguro de que quieres abandonar el login?
+    </DialogContent>
+    <DialogActions>
+        <button class="btn btn-primary" @onclick="ConfirmSignOut">Sí</button>
+        <button class="btn btn-secondary" @onclick="CancelSignOut">No</button>
+    </DialogActions>
+</Dialog>
+-->
 @code {
+    /*
+    [Inject]
+    public IJSRuntime JSRuntime { get; set; }
+    async Task HandleSalir()
+    {
+        if (hasUnsavedChanges)
+        {
+
+            var result = await JSRuntime.InvokeAsync<bool>("confirm", "¿Estas seguro de que deseas cancelar?")
+            if (result)
+            {
+                hasUnsavedChanges = false;
+                await OperationCanceledException.InvokeAsync();
+            }
+        }
+        else {
+            await OperationCanceledException.InvokeAsync();
+        }
+    }
+    */
+
     // Metodo que implementa el salir y desloguearse de la aplicacion
     void BeginSignOut()
     {
         Navigation.NavigateToLogout("authentication/logout");
     }
+
+    // Estado para controlar la visibilidad del cuadro de diálogo
+    /*bool showDialog = false;
+
+    // Método para abrir el cuadro de diálogo al salir
+    void BeginSignOut()
+    {
+        showDialog = true;
+    }
+
+    // Método para confirmar la salida
+    void ConfirmSignOut()
+    {
+        Navigation.NavigateToLogout("authentication/logout");
+    }
+
+    // Método para cancelar la salida
+    void CancelSignOut()
+    {
+        showDialog = false;
+    }*/
 }

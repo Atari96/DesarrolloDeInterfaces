@@ -18,9 +18,6 @@ builder.Services.AddHttpClient<OrdersClient>(client => client.BaseAddress = new 
     .AddHttpMessageHandler<BaseAddressAuthorizationMessageHandler>();
 builder.Services.AddScoped<OrderState>();
 
-// Incorporo el singleton para poder inyectar la clase que me realiza en cambio a modo oscuro
-builder.Services.AddSingleton<ThemeService>();
-
 // Llamada para habilitar los servicios de autenticacion, incluimoss el <PizzaAuthenticationState>
 // La parte options implica el codigo necesario para poder hacer el logout
 builder.Services.AddApiAuthorization<PizzaAuthenticationState>(options => {

@@ -1,16 +1,19 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
+
+
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' *; style-src 'self' 'unsafe-inline'; font-src 'self' data:">
-    
+
+    <!-- El csp permite la carga desde la fuente que sea necesaria, introducimos el de openmaps porque daba un error-->
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline' 'unsafe-eval' *; style-src 'self' 'unsafe-inline'; font-src 'self' data:; img-src 'self' https://a.tile.openstreetmap.org https://b.tile.openstreetmap.org https://c.tile.openstreetmap.org">
+
     <base href="/" />
     <link rel="icon" href="img/icon-512.png" />
     <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
-    <link id="site" href="site.css" rel="stylesheet" />
-    <link id="site2" href="site2.css" rel="stylesheet" />
+    <!-- Link al Css con un id para poder cambiar el tema-->
+    <link id="id_site" type="text/css" href="css/site.css" rel="stylesheet" />
     <link href="_content/BlazingPizza.ComponentsLibrary/leaflet/leaflet.css" rel="stylesheet" />
     <!-- Añadimos en la cabecera donde el navegador puede encontrar el archivo manifest que le diga como mostrar la página -->
     <link rel="manifest" href="manifest.json" />

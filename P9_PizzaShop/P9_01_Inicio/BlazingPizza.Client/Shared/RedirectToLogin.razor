@@ -1,10 +1,14 @@
-﻿<!-- Pagina que redireccionara al inicio de sesion en el caso de que el usuario no este autorizado a visitar la página-->
+﻿@*<summary>
+    Pagina que redireccionara al inicio de sesion en el caso de que el usuario no este autorizado a visitar la página
+    Navegamos a la pagina de inicio de sesión cuando se inicializa la página restringida
+</summary>*@
+
 <!-- Inyectamos el navegador-->
 @inject NavigationManager Navigation
 @code {
     protected override void OnInitialized()
     {
-        // Navegamos a la pagina de inicio de sesión cuando se inicializa la página
+        // Navegamos a la pagina de inicio de sesión cuando se inicializa la página restringida
         Navigation.NavigateToLogin($"authentication/login?returnUrl={Navigation.Uri}");
     }
 }

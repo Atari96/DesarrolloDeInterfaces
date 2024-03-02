@@ -1,8 +1,11 @@
-﻿<!-- 
+﻿@*<summary>
     Controla el acceso y autenticacion
     Envolvemos todo con CascadingAuthenticationState para que fluya el estado de autenticacion atraves de la app
-    
--->
+    Modificamos el Routeview por AuthorizeRouteView para gestionar el acceso de usuarios autorizados
+    Redireccion a la página de inicio por no estar autorizado
+    Mensaje que personaliza en el caso de no encontrar la ruta de una pagina
+</summary>*@
+
 <CascadingAuthenticationState>
     <Router AppAssembly="typeof(Program).Assembly" Context="routeData">
         <Found>

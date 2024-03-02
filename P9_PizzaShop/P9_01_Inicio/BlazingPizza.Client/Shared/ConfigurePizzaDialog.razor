@@ -1,8 +1,16 @@
 ﻿@inject HttpClient HttpClient
 
+@*<summary>
+    Pagina que configura la vista del Dialog que aparece cuando seleccionamos y configuramos la pizza 
+    Para poder utilizar la plantilla del componente de la etapa 8 tenemos que ajustar los contenedores del dialog
+    Definimos el desplegable en donde podremos seleccionar lor ingredientes
+    Incluye metodo para seleccionar, añadir o borrar ingrediente 
+</summary>*@
+
+
 <h3>Configura tu pizza</h3>
 
-<!-- Para que poder utilizar la plantilla del componente de la etapa 8 tenemos que ajustar los contenedores del dialog-->
+<!-- Para poder utilizar la plantilla del componente de la etapa 8 tenemos que ajustar los contenedores del dialog-->
         <div class="dialog-title">
             <h2>@Pizza.Special?.Name</h2>
             @Pizza.Special?.Description
@@ -84,6 +92,7 @@
         }
     }
 
+    // Incluye metodo para añadir ingrediente
     void AddTopping(Topping topping)
     {
         if (toppings is null) return;
@@ -93,6 +102,7 @@
         }
     }
 
+    // Incluye metodo para borrar ingrediente
     void RemoveTopping(Topping topping)
     {
         Pizza.Toppings.RemoveAll(pt => pt.Topping == topping);

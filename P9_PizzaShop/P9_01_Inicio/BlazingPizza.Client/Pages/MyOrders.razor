@@ -2,6 +2,14 @@
 @attribute [Authorize]
 @inject OrdersClient OrdersClient
 
+@*<summary>
+    Se incluye la plantilla de BlazingComponents, en donde se gestiona la información del estado de los pedidos,
+    haremos la carga de los datos de un pedido o de la lista de pedidos
+    Modificacion para manejar la excepcion en el caso de que el token de autorizacion no sea válido y que nos lleve a la pantalla de error.
+    El metodo devuelve el pedido junto con el estado
+</summary>*@
+
+
 <PageTitle>Don Pablo - Mis Pedidos</PageTitle>
 
 <div class="main">
@@ -35,7 +43,7 @@
 
 @code {
     IEnumerable<OrderWithStatus>? ordersWithStatus;
-    // modificacion para manejar la excepcion en el caso de que el token de autorizacion no sea válido y que nos lleve a la pantalla de error.
+    // Modificacion para manejar la excepcion en el caso de que el token de autorizacion no sea válido y que nos lleve a la pantalla de error.
     // El metodo devuelve el pedido junto con el estado
     async Task<IEnumerable<OrderWithStatus>> LoadOrders()
     {

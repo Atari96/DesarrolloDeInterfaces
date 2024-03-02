@@ -28,7 +28,10 @@ public class Address
     [MaxLength(50)]
     public string Region { get; set; } = string.Empty;
 
-    [Required(ErrorMessage = "Debe introducir un código postal.")]
+
+    // Como cambio funcional restringimos el área de reparto a zonas en donde el código postal empieza por 280
+    [Required(ErrorMessage = "Debe introducir un código postal válido para la zona de reparto.")]
+    [RegularExpression(@"^280\d{2}$", ErrorMessage = "El código postal debe empezar por '280' y tener 5 dígitos.")]
     [MaxLength(100)]
     [Display(Name = "CódigoPostal")]
     public string PostalCode { get; set; } = string.Empty;

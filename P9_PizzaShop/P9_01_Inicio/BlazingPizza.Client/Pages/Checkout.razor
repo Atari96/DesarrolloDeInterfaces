@@ -1,4 +1,17 @@
 ﻿@page "/checkout" 
+
+@*<summary>
+    Con la etiqueta Authorize controlamos el acceso a los usuarios que dispongan deautorización
+    El editform establece el campo del formulario que tendra que ser validado en el lado servidor
+    Con el addressEditor inicializamos la direccion del pedido y la validacion de los datos
+    Componentes para hacer la validacion del formulario
+    Cuando se inicializa se envia una petición de subscripcion
+    Se define el metodo de peticion de subscripcion, se define la suscripcion de las notificaciones push
+    Se comprueba que la suscripcion no sea nula, y envia la suscripcion al servidor para que pueda eviar notificaciones al usuario
+    Se define un nuevo pedido y se le asigna un nuevo Id del pedido, luego se resetea el estado del pedido
+    Modificacion para manejar la excepcion en el caso de que el token de autorizacion no sea válido y que nos lleve a la pantalla de error.
+</summary>*@
+
 <!-- Con la etiqueta Authorize controlamos el acceso a los usuarios que dispongan deautorización-->
 @attribute [Authorize]
 @inject OrderState OrderState
