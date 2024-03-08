@@ -2,6 +2,12 @@
 
 namespace BlazingPizza;
 
+/// <summary>
+/// Clase que controla todos los datos referentes a los pedidos, como la fecha, direcciones y datos de las pizzas
+/// Codigo que nos permite serializar y deserializar datos Json de la clase OrderContext, definiendo el metodo que genera los nombres y el tipo (camelcase) 
+/// Atributos que seran serilizados/deserializados
+/// </summary>
+
 public class Order
 {
     public int OrderId { get; set; }

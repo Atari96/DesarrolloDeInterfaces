@@ -1,16 +1,24 @@
-﻿@using Microsoft.JSInterop
+﻿@*<summary>
+    En este componente se definen y cargan los mapas
+    Incluimos una llamada al metodo initLeafletMap en donde queremos cambiar el mapa
+</summary>*@
+@using Microsoft.JSInterop
 @inject IJSRuntime JSRuntime
 
 <div id="@elementId" style="height: 100%; width: 100%;"></div>
 
 @code {
     string elementId = $"map-{Guid.NewGuid().ToString("D")}";
-
     [Parameter] public double Zoom { get; set; }
     [Parameter, EditorRequired] public List<Marker> Markers { get; set; } = new();
 
-    protected async override Task OnAfterRenderAsync(bool firstRender)
+    protected override async Task OnAfterRenderAsync(bool firstRender)
     {
+        if (firstRender)
+        {
+            await JSRuntime.InvokeVoidAsync("mapFunctions.initLeafletMap");
+        }
+
         await JSRuntime.InvokeVoidAsync(
             "deliveryMap.showOrUpdate",
             elementId,

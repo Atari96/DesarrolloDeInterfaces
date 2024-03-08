@@ -1,7 +1,12 @@
 using Microsoft.JSInterop;
 
+
 namespace BlazingComponents
 {
+    /// <summary>
+    /// Clase que nos permite interactuar con los scripts JavaScript en tiempo de ejecucion
+    /// </summary>
+
     // This class provides an example of how JavaScript functionality can be wrapped
     // in a .NET class for easy consumption. The associated JavaScript module is
     // loaded on demand when first needed.

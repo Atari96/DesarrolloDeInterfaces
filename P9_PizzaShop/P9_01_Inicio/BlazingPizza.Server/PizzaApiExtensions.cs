@@ -4,6 +4,11 @@ using Microsoft.EntityFrameworkCore;
 
 namespace BlazingPizza.Server;
 
+/// <summary>
+/// Clase en donde se gestiona parte de las llamadas a la base de datos, entre otras cosas se mapean los datos referentes a pizzas, topings y promociones
+/// pasando los datos de la base de datos
+/// </summary>
+
 public static class PizzaApiExtensions
 {
 

@@ -1,4 +1,4 @@
-﻿(function () {
+﻿((function () {
     var tileUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
     var tileAttribution = 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>';
 
@@ -10,19 +10,18 @@
                 throw new Error('No element with ID ' + elementId);
             }
 
-            // Initialize map if needed
+            // Inicializacion del mapa
             if (!elem.map) {
-                elem.map = L.map(elementId);
+                // Usamos Leaflet library para crear mapa centrado en Madrid
+                elem.map = L.map(elementId).setView([40.416775, -3.70379], 13); // Coordenadas de Madrid
                 elem.map.addedMarkers = [];
                 L.tileLayer(tileUrl, { attribution: tileAttribution }).addTo(elem.map);
             }
-
-            var map = elem.map;
             if (map.addedMarkers.length !== markers.length) {
                 // Markers have changed, so reset
                 map.addedMarkers.forEach(marker => marker.removeFrom(map));
                 map.addedMarkers = markers.map(m => {
-                    return L.marker([m.y, m.x]).bindPopup(m.description).addTo(map);
+                    return L.marker([m.lat, m.lng]).bindPopup(m.description).addTo(map);
                 });
 
                 // Auto-fit the view
@@ -55,7 +54,8 @@
         marker.existingAnimation = {
             startTime: new Date(),
             durationMs: durationMs,
-            startCoords: { x: marker.getLatLng().lng, y: marker.getLatLng().lat },
+            //startCoords: { x: marker.getLatLng().lng, y: marker.getLatLng().lat },
+            startCoords: { x: 40.416775, y: -3.70379 },
             endCoords: coords,
             callbackHandle: window.requestAnimationFrame(() => animateMarkerMoveFrame(marker))
         };

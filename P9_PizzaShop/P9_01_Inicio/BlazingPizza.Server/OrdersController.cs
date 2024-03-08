@@ -7,6 +7,15 @@ using System.Text.Json;
 
 namespace BlazingPizza.Server;
 
+/// <summary>
+/// En el servidor tenemos que realizar la validación de los datos introducidos por el cliente
+/// El ApiController nos permite hacer anotaciones sobre los distintos campos
+/// Linea que autoriza el get al usuario segun su id
+/// Metodo que se ocupa del envio y seguimiento de notificaciones, se pasa el pedido y la suscripcion
+/// Cuando cambia el estado del pedido se envia una notificacion
+/// Modificamos la longitud y latitud del mensajero al IES Pio baroja
+/// </summary>
+
 // En el servidor tenemos que realizar la validación de los datos introducidos por el cliente
 // El ApiController nos permite hacer anotaciones sobre los distintos campos
 
@@ -59,7 +68,7 @@ public class OrdersController : Controller
     public async Task<ActionResult<int>> PlaceOrder(Order order)
     {
         order.CreatedTime = DateTime.Now;
-        order.DeliveryLocation = new LatLong(51.5001, -0.1239);
+        order.DeliveryLocation = new LatLong(40.3732, -3.7183); // Modificamos la longitud y latitud del mensajero al IES Pio baroja
             order.UserId = PizzaApiExtensions.GetUserId(HttpContext);
 
         // Enforce existence of Pizza.SpecialId and Topping.ToppingId

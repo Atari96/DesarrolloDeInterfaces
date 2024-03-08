@@ -37,6 +37,10 @@
       "PackagePath": "staticwebassets\\localStorage.js"
     },
     {
+      "Id": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.ComponentsLibrary\\wwwroot\\mapFunctions.js",
+      "PackagePath": "staticwebassets\\mapFunctions.js"
+    },
+    {
       "Id": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.ComponentsLibrary\\wwwroot\\pushNotifications.js",
       "PackagePath": "staticwebassets\\pushNotifications.js"
     },

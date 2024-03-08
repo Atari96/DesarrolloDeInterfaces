@@ -1,5 +1,12 @@
 ﻿namespace BlazingPizza.Client
 {
+
+    /// <summary>
+    /// Controla la informacion que se mostrara relacionada con el estado de los pedidos
+    /// Se encarga de mostrar la pantalla en donde diseñaremos la pizza
+    /// Se encarga de cerrar el cuadro de la configuracion
+    /// Metodo que se realiza para recuperar un pedido que habiamos hecho antes de loguearnos, y que persista despues
+    /// </summary>
     public class OrderState
     {
         public bool ShowingConfigureDialog { get; private set; }

@@ -1,5 +1,9 @@
 ﻿namespace BlazingPizza;
 
+/// <summary>
+/// Controla los parametros de longitus y latitud que van a ser utilizados para la ubicacion del pedido y del cliente.
+/// </summary>
+
 public class LatLong
 {
     public LatLong()
@@ -8,8 +12,8 @@ public class LatLong
 
     public LatLong(double latitude, double longitude) : this()
     {
-        Latitude = latitude;
-        Longitude = longitude;
+        Latitude = 40.416775;
+        Longitude = -3.70379;
     }
 
     public double Latitude { get; set; }

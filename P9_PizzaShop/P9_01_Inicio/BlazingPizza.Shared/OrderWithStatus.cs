@@ -1,6 +1,9 @@
 ﻿using System.Text.Json.Serialization;
 using BlazingPizza.ComponentsLibrary.Map;
 
+/// <summary>
+/// Gestiona el estado en el que se encuentran los pedidos, así como establecer el tiempo entre las fses del pedido.
+/// </summary>
 
 namespace BlazingPizza;
 

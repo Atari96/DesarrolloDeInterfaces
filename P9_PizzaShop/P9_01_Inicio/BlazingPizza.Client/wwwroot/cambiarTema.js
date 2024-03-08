@@ -1,4 +1,5 @@
-﻿
+﻿// Con este script cambiamos el nomber del campo href que le pasamos como parametro
+// Como link tenemos que pasar el cambio en la barra de navegacion, hacemos un truco y le añadimos una marca horaria 
 function cambiarTema(cssFile) {
     var oldlink = document.getElementById("id_site");
     var newlink = document.createElement("link");

@@ -13,6 +13,16 @@
 
   <ItemGroup>
     <SupportedPlatform Include="browser" />
+    <Content Update="wwwroot\deliveryMap.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+	  <Content Update="wwwroot\mapFunctions.js">
+		  <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="wwwroot\mapFunctions.js">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Content>
   </ItemGroup>
 
 </Project>

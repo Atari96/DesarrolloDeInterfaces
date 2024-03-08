@@ -1,7 +1,7 @@
 ﻿namespace BlazingPizza;
 
 /// <summary>
-/// Represents a pre-configured template for a pizza a user can order
+/// Representa la informacion fundamental de las pizzas especiales que son la base
 /// </summary>
 public class PizzaSpecial
 {

@@ -12,4 +12,7 @@ public static class LocalStorage
 
     public static ValueTask DeleteAsync(IJSRuntime jsRuntime, string key)
             => jsRuntime.InvokeVoidAsync("blazorLocalStorage.delete", key);
+
+    /*public static ValueTask GetAsync(IJSRuntime jsRuntime, string key)
+            => jsRuntime.InvokeVoidAsync("mapFunctions.initLeafletMap");*/
 }

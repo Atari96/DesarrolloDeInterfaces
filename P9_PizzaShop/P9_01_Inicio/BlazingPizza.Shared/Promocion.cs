@@ -1,7 +1,7 @@
 ﻿namespace BlazingPizza;
 
 /// <summary>
-/// Representa las promociones
+/// Representa la clase de las promociones
 /// </summary>
 public class Promocion
 {

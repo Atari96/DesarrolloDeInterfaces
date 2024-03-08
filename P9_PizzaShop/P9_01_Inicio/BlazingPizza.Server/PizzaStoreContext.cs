@@ -5,6 +5,11 @@ using Microsoft.Extensions.Options;
 
 namespace BlazingPizza.Server;
 
+/// <summary>
+/// Clase en la cual se controlan los datos que se van a importar de la base de datos
+/// hacemos una nueva llamada para coger los datos de la tabla promociones de la base de datos
+/// </summary>
+
 public class PizzaStoreContext : ApiAuthorizationDbContext<PizzaStoreUser>
 {
     public PizzaStoreContext(

@@ -14,6 +14,8 @@ C:\Users\pmora\Documents\FP\SEGUNDO\5_DesarrolloInterfaces\PRACTICAS\P9_PizzaSho
 C:\Users\pmora\Documents\FP\SEGUNDO\5_DesarrolloInterfaces\PRACTICAS\P9_PizzaShop\P9_Inicio\BlazingPizza.Shared\obj\Debug\net7.0\refint\BlazingPizza.Shared.dll
 C:\Users\pmora\Documents\FP\SEGUNDO\5_DesarrolloInterfaces\PRACTICAS\P9_PizzaShop\P9_Inicio\BlazingPizza.Shared\obj\Debug\net7.0\BlazingPizza.Shared.pdb
 C:\Users\pmora\Documents\FP\SEGUNDO\5_DesarrolloInterfaces\PRACTICAS\P9_PizzaShop\P9_Inicio\BlazingPizza.Shared\obj\Debug\net7.0\ref\BlazingPizza.Shared.dll
+C:\Users\pmora\Documents\FP\SEGUNDO\5_DesarrolloInterfaces\PRACTICAS\P9_PizzaShop\P9_01_Inicio\BlazingPizza.Shared\bin\Debug\net7.0\wwwroot\deliveryMap.js
+C:\Users\pmora\Documents\FP\SEGUNDO\5_DesarrolloInterfaces\PRACTICAS\P9_PizzaShop\P9_01_Inicio\BlazingPizza.Shared\bin\Debug\net7.0\wwwroot\mapFunctions.js
 C:\Users\pmora\Documents\FP\SEGUNDO\5_DesarrolloInterfaces\PRACTICAS\P9_PizzaShop\P9_01_Inicio\BlazingPizza.Shared\bin\Debug\net7.0\BlazingPizza.ComponentsLibrary.staticwebassets.runtime.json
 C:\Users\pmora\Documents\FP\SEGUNDO\5_DesarrolloInterfaces\PRACTICAS\P9_PizzaShop\P9_01_Inicio\BlazingPizza.Shared\bin\Debug\net7.0\BlazingPizza.Shared.deps.json
 C:\Users\pmora\Documents\FP\SEGUNDO\5_DesarrolloInterfaces\PRACTICAS\P9_PizzaShop\P9_01_Inicio\BlazingPizza.Shared\bin\Debug\net7.0\BlazingPizza.Shared.dll

@@ -1,6 +1,12 @@
 ﻿using System.ComponentModel.DataAnnotations; // Incorporamos las anotaciones de campos obligatorios y longitudes en el servidor
 namespace BlazingPizza;
 
+/// <summary>
+/// Gestiona los datos que introduciremos en los formularios (direccion de envio)
+/// Establece los requisitos que deben de tener los campos
+/// Establece las resticciones de los campos y mensajes de error
+/// </summary>
+
 public class Address
 {
     public int Id { get; set; }

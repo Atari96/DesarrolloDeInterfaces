@@ -2,6 +2,13 @@
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.EntityFrameworkCore;
 
+/// <summary>
+/// Configura una aplicación ASP.NET Core para servir como backend de una aplicación Blazor.
+/// Configura los servicios y el pipeline de solicitudes HTTP.
+/// Gesdtiona el Identityserver
+/// Inicializa la base de datos
+/// </summary>
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllersWithViews()

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "YIJCx/8o6G1BySpvkQsNmeCkUXkQCH+roJ0wDhkWeso=",
+  "Hash": "vcN5QhXBoVDgvT4UrPNAHywTN3PeULpgot8k32hm/2E=",
   "Source": "BlazingPizza.Client",
   "BasePath": "/",
   "Mode": "Root",
@@ -7971,7 +7971,7 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
+      "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\deliveryMap.js"
     },
@@ -8110,6 +8110,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\localStorage.js"
+    },
+    {
+      "Identity": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.ComponentsLibrary\\wwwroot\\mapFunctions.js",
+      "SourceId": "BlazingPizza.ComponentsLibrary",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.ComponentsLibrary\\wwwroot\\",
+      "BasePath": "_content/BlazingPizza.ComponentsLibrary",
+      "RelativePath": "mapFunctions.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\mapFunctions.js"
     },
     {
       "Identity": "C:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\5_DesarrolloInterfaces\\PRACTICAS\\P9_PizzaShop\\P9_01_Inicio\\BlazingPizza.ComponentsLibrary\\wwwroot\\pushNotifications.js",

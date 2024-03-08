@@ -31,10 +31,12 @@
                         <option>(loading...)</option>
                     </select>
                 }
+                // Estructura que solo nos deja poner 6 ingredientes como máximo
                 else if (Pizza.Toppings.Count >= 6)
                 {
-                    <div>(maximum reached)</div>
+                    <div>(Máximo de ingredientes alcanzado)</div>
                 }
+        
                 else
                 {
                     <!-- Definimos el desplegable en donde podremos seleccionar lor ingredientes-->
@@ -46,6 +48,10 @@
                         }
                     </select>
                 }
+            </div>
+            <div class="d-flex justify-content-center">
+                <!-- Botón para borrar todos los ingredientes de golpe -->
+                <button type="button" class="topping" @onclick="DeleteAllToppings">Borrar todos los ingredientes</button>
             </div>
             <div class="toppings">
                 @foreach (var topping in Pizza.Toppings)
@@ -78,7 +84,7 @@
     [Parameter, EditorRequired] public EventCallback OnCancel { get; set; }
     [Parameter, EditorRequired] public EventCallback OnConfirm { get; set; }
 
-    
+
 
     protected async override Task OnInitializedAsync()
     {
@@ -106,6 +112,12 @@
     void RemoveTopping(Topping topping)
     {
         Pizza.Toppings.RemoveAll(pt => pt.Topping == topping);
+    }
+
+    // Borrar todos los ingredientes de golpe
+    void DeleteAllToppings()
+    {
+        Pizza.Toppings.Clear();
     }
 
     

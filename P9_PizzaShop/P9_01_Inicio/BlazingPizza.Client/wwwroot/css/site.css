@@ -21,7 +21,7 @@ form {
 
 .top-bar {
     height: 5rem;
-    background-color: deeppink;
+    background-color: rgb(192,0,0);
     background-image: linear-gradient(rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.25) 25%, rgba(0,0,0,0) 70%);
     display: flex;
     align-items: stretch;
@@ -48,7 +48,7 @@ form {
     display: flex;
     height: 100%;
     z-index: 1;
-    background-color: blue; /*White*/
+    background-color: white;
 }
 
 .main {
@@ -240,7 +240,7 @@ form {
 }
 
 .sidebar {
-    background-color: #b86363; /*#2b2b2b*/
+    background-color: #2b2b2b;
     width: 20rem;
     display: flex;
     flex-direction: column;
@@ -275,9 +275,9 @@ form {
     padding: 0 1.5rem;
 }
 
-.order-total.hidden {
-    transform: translate3d(0, 4rem, 0);
-}
+    .order-total.hidden {
+        transform: translate3d(0, 4rem, 0);
+    }
 
     .order-total .total-price {
         font-weight: 700;
@@ -445,27 +445,27 @@ form {
     padding: 0 1rem;
 }
 
-    .dialog-body > div {
-        display: flex;
-        margin-top: 1rem;
-        align-items: center;
-    }
+.dialog-body > div {
+    display: flex;
+    margin-top: 1rem;
+    align-items: center;
+}
 
-    .dialog-body label {
-        text-align: right;
-        width: 200px;
-        margin: 0 1.5rem;
-    }
+.dialog-body label {
+    text-align: right;
+    width: 200px;
+    margin: 0 1.5rem;
+}
 
-    .dialog-body input, .dialog-body select {
-        flex-grow: 1;
-        width: unset;
-    }
+.dialog-body input, .dialog-body select {
+    flex-grow: 1;
+    width: unset;
+}
 
-    .dialog-body .size-label {
-        min-width: 110px;
-        text-align: right;
-    }
+.dialog-body .size-label {
+    min-width: 110px;
+    text-align: right;
+}
 
 .dialog .toppings {
     text-align: center;
@@ -488,9 +488,9 @@ form {
     font-size: 0.8rem;
 }
 
-.dialog .topping-price::before {
-    content: '€';
-}
+    .dialog .topping-price::before {
+        content: '€';
+    }
 
 .delete-topping {
     background: none;
@@ -500,9 +500,9 @@ form {
     cursor: pointer;
 }
 
-.delete-topping:hover {
-    color: yellow;
-}
+    .delete-topping:hover {
+        color: yellow;
+    }
 
 .form-message {
     padding: 0.5rem;
@@ -688,6 +688,7 @@ input[type=range] {
 .checkout-cols {
     display: flex;
 }
+
     .checkout-cols h4 {
         margin-bottom: 1.5rem;
     }

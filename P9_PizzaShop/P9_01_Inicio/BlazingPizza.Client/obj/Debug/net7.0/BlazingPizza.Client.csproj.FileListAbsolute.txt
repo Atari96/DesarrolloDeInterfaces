@@ -1274,6 +1274,8 @@ C:\Users\pmora\Documents\FP\SEGUNDO\5_DesarrolloInterfaces\PRACTICAS\P9_PizzaSho
 C:\Users\pmora\Documents\FP\SEGUNDO\5_DesarrolloInterfaces\PRACTICAS\P9_PizzaShop\P9_01_Inicio\BlazingPizza.Client\bin\Debug\net7.0\wwwroot\_framework\Microsoft.Extensions.FileSystemGlobbing.dll.gz
 C:\Users\pmora\Documents\FP\SEGUNDO\5_DesarrolloInterfaces\PRACTICAS\P9_PizzaShop\P9_01_Inicio\BlazingPizza.Client\bin\Debug\net7.0\wwwroot\_framework\System.Runtime.dll.gz
 C:\Users\pmora\Documents\FP\SEGUNDO\5_DesarrolloInterfaces\PRACTICAS\P9_PizzaShop\P9_01_Inicio\BlazingPizza.Client\bin\Debug\net7.0\BlazingComponents.staticwebassets.runtime.json
+C:\Users\pmora\Documents\FP\SEGUNDO\5_DesarrolloInterfaces\PRACTICAS\P9_PizzaShop\P9_01_Inicio\BlazingPizza.Client\bin\Debug\net7.0\wwwroot\deliveryMap.js
+C:\Users\pmora\Documents\FP\SEGUNDO\5_DesarrolloInterfaces\PRACTICAS\P9_PizzaShop\P9_01_Inicio\BlazingPizza.Client\bin\Debug\net7.0\wwwroot\mapFunctions.js
 C:\Users\pmora\Documents\FP\SEGUNDO\5_DesarrolloInterfaces\PRACTICAS\P9_PizzaShop\P9_01_Inicio\BlazingPizza.Client\bin\Debug\net7.0\BlazingPizza.ComponentsLibrary.staticwebassets.runtime.json
 C:\Users\pmora\Documents\FP\SEGUNDO\5_DesarrolloInterfaces\PRACTICAS\P9_PizzaShop\P9_01_Inicio\BlazingPizza.Client\bin\Debug\net7.0\BlazingPizza.Client.staticwebassets.runtime.json
 C:\Users\pmora\Documents\FP\SEGUNDO\5_DesarrolloInterfaces\PRACTICAS\P9_PizzaShop\P9_01_Inicio\BlazingPizza.Client\bin\Debug\net7.0\BlazingPizza.Client.dll

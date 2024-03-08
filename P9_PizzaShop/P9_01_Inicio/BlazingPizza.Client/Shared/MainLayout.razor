@@ -54,7 +54,7 @@
 
     private async Task CambiarModoOscuro()
     {
-        cssFile = (tog == 0) ? "css/site2" : "css/site.css";
+        cssFile = (tog == 0) ? "css/site2.css" : "css/site.css";
         tog = (tog == 0) ? 1 : 0;
         await JSRuntime.InvokeVoidAsync("cambiarTema", cssFile);
     }

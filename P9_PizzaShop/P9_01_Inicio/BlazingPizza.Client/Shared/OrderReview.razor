@@ -31,6 +31,11 @@
     </strong>
 </p>
 
+@if (Order.GetTotalPrice() > 50)
+{
+    <p><em>¡Te regalamos dos botellas de vino!</em></p>
+}
+
 @code {
     [Parameter, EditorRequired] public Order Order { get; set; } = new();
 }

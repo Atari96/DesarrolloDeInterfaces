@@ -1,7 +1,22 @@
-﻿using System.Net.Http.Json;
+﻿
+
+using System.Net.Http.Json;
 
 namespace BlazingPizza.Client;
 
+
+/// <summary>
+/// Declaramos el httpclient para enviar peticiones y respuestas solo de lectura para que no pueda ser modificado
+/// Metodos que nos serviran para interactuar con la API mediante lasa solicitudes httpClient
+/// El metodo getOrders obtiene la lista de pedidos junto con su estado, con el getFromJsonAsync deserializamos los datos
+/// tenemos que pasar la ruta, y nos devuelve la lista de pedidos. Con ?? gestionamos el nulo
+/// Obtenemos el pedido segun el id que hayamos pasado como parametro
+/// Metodo para realizar una peticion Post al servidor (post), enviando el pedido, hay que pasar por parametro el pedido
+/// Metodo que permite subscribirnos a las notificaciones, se le pasa una notificación
+/// El metodo no tiene que esperar (await) mientras se hace una petición http del tipo put a la direccion notification/susbscribe
+/// La peticion se serializa a Json
+/// En funcion de la respuesta podria arrojar un codigo de error y lanzará excepcion
+/// </summary>
 public class OrdersClient
 {
     // Declaramos el httpclient para enviar peticiones y respuestas solo de lectura para que no pueda ser modificado
@@ -12,7 +27,7 @@ public class OrdersClient
         this.httpClient = httpClient;
     }
 
-    // Metodos que nos serviran para interactuar con la API mediante lasa solicitudes httpClient
+    // Metodos que nos serviran para interactuar con la API mediante las solicitudes httpClient
 
     // El metodo getOrders obtiene la lista de pedidos junto con su estado, con el getFromJsonAsync deserializamos los datos
     // tenemos que pasar la ruta, y nos devuelve la lista de pedidos. Con ?? gestionamos el nulo

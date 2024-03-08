@@ -1,5 +1,9 @@
 ﻿namespace BlazingPizza.Server;
 
+
+/// <summary>
+/// En la clase seedData.cs se extraen los datos recogidos de la base de datos correspondientes a las pizzas
+/// </summary>
 public static class SeedData
 {
     public static void Initialize(PizzaStoreContext db)
